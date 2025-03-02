@@ -1,0 +1,72 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.61\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "b5e19563f1966761901c",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1bbc6f11b24a31f44d80\",\"layouts\":[{\"id\":0,\"position\":{\"x\":982.3880597014925,\"y\":88.65671641791045,\"z\":1,\"width\":198.80597014925374,\"height\":515.820895522388,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"season.Year\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"season\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Year\"},\"Name\":\"season.Year\",\"NativeReferenceName\":\"Year\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 515.82,
+          "width": 198.81,
+          "x": 982.39,
+          "y": 88.66,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"7b9b74eb74f3d26c3291\",\"layouts\":[{\"id\":0,\"position\":{\"x\":77.01492537313433,\"y\":88.65671641791045,\"z\":0,\"width\":905.3731343283582,\"height\":515.820895522388,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"spotlight.default_name\"},{\"queryRef\":\"spotlight.headshot\"},{\"queryRef\":\"spotlight.playerId\"},{\"queryRef\":\"spotlight.playerSlug\"},{\"queryRef\":\"spotlight.position\"},{\"queryRef\":\"spotlight.sweaterNumber\"},{\"queryRef\":\"spotlight.teamId\"},{\"queryRef\":\"spotlight.sortId\"},{\"queryRef\":\"spotlight.teamLogo\"},{\"queryRef\":\"spotlight.teamTriCode\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"spotlight\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"default_name\"},\"Name\":\"spotlight.default_name\",\"NativeReferenceName\":\"default_name\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"headshot\"},\"Name\":\"spotlight.headshot\",\"NativeReferenceName\":\"headshot\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"playerId\"},\"Name\":\"spotlight.playerId\",\"NativeReferenceName\":\"playerId\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"playerSlug\"},\"Name\":\"spotlight.playerSlug\",\"NativeReferenceName\":\"playerSlug\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"position\"},\"Name\":\"spotlight.position\",\"NativeReferenceName\":\"position\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"sweaterNumber\"},\"Name\":\"spotlight.sweaterNumber\",\"NativeReferenceName\":\"sweaterNumber\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"teamId\"},\"Name\":\"spotlight.teamId\",\"NativeReferenceName\":\"teamId\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"sortId\"},\"Name\":\"spotlight.sortId\",\"NativeReferenceName\":\"sortId\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"teamLogo\"},\"Name\":\"spotlight.teamLogo\",\"NativeReferenceName\":\"teamLogo\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"teamTriCode\"},\"Name\":\"spotlight.teamTriCode\",\"NativeReferenceName\":\"teamTriCode\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"sortId\"}}}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 515.82,
+          "width": 905.37,
+          "x": 77.01,
+          "y": 88.66,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Page 2",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "efbb95bd098ea7a685ed",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0bcc7b5d6908566dee36\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":1280.3627247956404,\"height\":719.6459945504088,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"This work would not have been possible without those heroes working hard to create community documentation for the NHL API, and of couse the legends at the NHL for making all this data available free of charge.\",\"textStyle\":{\"fontSize\":\"20pt\"}}]},{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"Go Leafs Go! This'll be the year!\",\"textStyle\":{\"fontSize\":\"20pt\"}}]},{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"https://gitlab.com/dword4/nhlapi/-/tree/master\",\"textStyle\":{\"fontSize\":\"20pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 719.65,
+          "width": 1280.36,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

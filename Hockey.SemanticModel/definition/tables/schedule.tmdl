@@ -1,0 +1,35 @@
+table schedule
+	lineageTag: 538354af-fa1d-4fad-b42a-c248622966e0
+
+	column Name
+		dataType: string
+		lineageTag: 0ba2ae93-3e8d-4641-a151-e3685496f6f9
+		summarizeBy: none
+		sourceColumn: Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Value
+		dataType: string
+		lineageTag: 831a8b51-41d5-4b0e-a367-7596862dda20
+		summarizeBy: none
+		sourceColumn: Value
+
+		annotation SummarizationSetBy = Automatic
+
+	partition schedule = m
+		mode: import
+		source =
+				let
+				    headers = [#"Content-type" = "application/json"],
+				    result = Web.Contents("https://api-web.nhle.com/v1/schedule/2025-03-01",[Headers = headers]), //TODO: abstract the date to a parameter
+				    json = Json.Document(result),
+				
+				    output = json
+				in
+				    output
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Record
+
