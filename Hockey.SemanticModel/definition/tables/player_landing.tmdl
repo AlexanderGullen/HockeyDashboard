@@ -1,0 +1,253 @@
+table player_landing
+	lineageTag: 6bbe1fa2-fd18-45ba-9262-20c50ceb19cd
+
+	column playerId
+		dataType: string
+		lineageTag: aa5ed5da-fa4f-4810-849e-2736ad8f3fe5
+		summarizeBy: none
+		sourceColumn: playerId
+
+		annotation SummarizationSetBy = Automatic
+
+	column isActive
+		dataType: string
+		lineageTag: e2fcf7fc-6635-4c6e-a5f9-00b9a4f27c70
+		summarizeBy: none
+		sourceColumn: isActive
+
+		annotation SummarizationSetBy = Automatic
+
+	column firstName
+		dataType: string
+		lineageTag: 1fb2d966-ec7d-45f6-a612-ba82df4e8f56
+		summarizeBy: none
+		sourceColumn: firstName
+
+		annotation SummarizationSetBy = Automatic
+
+	column lastName
+		dataType: string
+		lineageTag: aa4c9c16-d66f-406d-ac74-520d923c9daa
+		summarizeBy: none
+		sourceColumn: lastName
+
+		annotation SummarizationSetBy = Automatic
+
+	column badges
+		dataType: string
+		lineageTag: 1d959ea5-aeb2-4949-b894-a6f4e241e83a
+		summarizeBy: none
+		sourceColumn: badges
+
+		annotation SummarizationSetBy = Automatic
+
+	column sweaterNumber
+		dataType: string
+		lineageTag: 66c83864-dd65-4830-948c-611dadcfab65
+		summarizeBy: none
+		sourceColumn: sweaterNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column position
+		dataType: string
+		lineageTag: 3e0861f8-f3bc-489a-9cc3-d3b2c79a5903
+		summarizeBy: none
+		sourceColumn: position
+
+		annotation SummarizationSetBy = Automatic
+
+	column headshot
+		dataType: string
+		lineageTag: 13acde9b-5c8a-4103-9647-7455a305f891
+		dataCategory: ImageUrl
+		summarizeBy: none
+		sourceColumn: headshot
+
+		annotation SummarizationSetBy = Automatic
+
+	column heroImage
+		dataType: string
+		lineageTag: 7d776167-3cb3-49a9-aff8-b700af3d9f4b
+		summarizeBy: none
+		sourceColumn: heroImage
+
+		annotation SummarizationSetBy = Automatic
+
+	column heightInInches
+		dataType: string
+		lineageTag: ac6a7dd9-b516-4d36-9425-8564f205e2cb
+		summarizeBy: none
+		sourceColumn: heightInInches
+
+		annotation SummarizationSetBy = Automatic
+
+	column heightInCentimeters
+		dataType: string
+		lineageTag: 26617d11-56c9-426d-944a-fcdfd6072090
+		summarizeBy: none
+		sourceColumn: heightInCentimeters
+
+		annotation SummarizationSetBy = Automatic
+
+	column weightInPounds
+		dataType: string
+		lineageTag: b2201e0e-2bdf-49a6-bce6-274c59a9c245
+		summarizeBy: none
+		sourceColumn: weightInPounds
+
+		annotation SummarizationSetBy = Automatic
+
+	column weightInKilograms
+		dataType: string
+		lineageTag: 8a7a76f5-4d81-4ce9-8880-8e2df3e85384
+		summarizeBy: none
+		sourceColumn: weightInKilograms
+
+		annotation SummarizationSetBy = Automatic
+
+	column birthDate
+		dataType: string
+		lineageTag: f0497714-ce0f-4c22-a670-560df9932cf0
+		summarizeBy: none
+		sourceColumn: birthDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column birthCity
+		dataType: string
+		lineageTag: 1867a390-d25d-4d24-99a1-833345d60f20
+		summarizeBy: none
+		sourceColumn: birthCity
+
+		annotation SummarizationSetBy = Automatic
+
+	column birthStateProvince
+		dataType: string
+		lineageTag: 6ff2e844-9825-41a9-bb02-36d2a5ba4a18
+		summarizeBy: none
+		sourceColumn: birthStateProvince
+
+		annotation SummarizationSetBy = Automatic
+
+	column birthCountry
+		dataType: string
+		lineageTag: 78831756-3de3-4919-a575-592e8a9f7cea
+		summarizeBy: none
+		sourceColumn: birthCountry
+
+		annotation SummarizationSetBy = Automatic
+
+	column shootsCatches
+		dataType: string
+		lineageTag: d19f578c-9ad6-4bbc-9c0d-93167f2efd70
+		summarizeBy: none
+		sourceColumn: shootsCatches
+
+		annotation SummarizationSetBy = Automatic
+
+	column playerSlug
+		dataType: string
+		lineageTag: b6a6558a-112e-4a88-b856-7eaee143201e
+		summarizeBy: none
+		sourceColumn: playerSlug
+
+		annotation SummarizationSetBy = Automatic
+
+	column inTop100AllTime
+		dataType: string
+		lineageTag: ace1c63d-54b9-487b-90cf-6fd232e61546
+		summarizeBy: none
+		sourceColumn: inTop100AllTime
+
+		annotation SummarizationSetBy = Automatic
+
+	column inHHOF
+		dataType: string
+		lineageTag: abd1b47b-f740-47b6-98f8-541d347898a4
+		summarizeBy: none
+		sourceColumn: inHHOF
+
+		annotation SummarizationSetBy = Automatic
+
+	column featuredStats
+		dataType: string
+		lineageTag: 5a9bbf69-4656-40dc-962a-3915e0d59f0a
+		summarizeBy: none
+		sourceColumn: featuredStats
+
+		annotation SummarizationSetBy = Automatic
+
+	column careerTotals
+		dataType: string
+		lineageTag: c4dee9d5-686f-4d30-9729-d65dc66da0e1
+		summarizeBy: none
+		sourceColumn: careerTotals
+
+		annotation SummarizationSetBy = Automatic
+
+	column shopLink
+		dataType: string
+		lineageTag: 7443a3ea-c56a-4e30-9bb0-a1fb78937ee3
+		summarizeBy: none
+		sourceColumn: shopLink
+
+		annotation SummarizationSetBy = Automatic
+
+	column twitterLink
+		dataType: string
+		lineageTag: 46f89447-a509-4a64-b62f-171e4ec25b41
+		summarizeBy: none
+		sourceColumn: twitterLink
+
+		annotation SummarizationSetBy = Automatic
+
+	column watchLink
+		dataType: string
+		lineageTag: 41bddddd-89dd-4561-92db-a4778f5b76b9
+		summarizeBy: none
+		sourceColumn: watchLink
+
+		annotation SummarizationSetBy = Automatic
+
+	column last5Games
+		dataType: string
+		lineageTag: bca29a05-17de-4a47-941b-5d2a8f287df9
+		summarizeBy: none
+		sourceColumn: last5Games
+
+		annotation SummarizationSetBy = Automatic
+
+	column seasonTotals
+		dataType: string
+		lineageTag: 6e58ddb6-4aa6-4788-9485-afc5c537826b
+		summarizeBy: none
+		sourceColumn: seasonTotals
+
+		annotation SummarizationSetBy = Automatic
+
+	column awards
+		dataType: string
+		lineageTag: bbc40a54-20e2-4ba8-ae20-158a7b23a22c
+		summarizeBy: none
+		sourceColumn: awards
+
+		annotation SummarizationSetBy = Automatic
+
+	partition player_landing = m
+		mode: import
+		source =
+				let
+				    headers = [#"Content-type" = "application/json"],
+				    result = Web.Contents("https://api-web.nhle.com/v1/player/8447400/landing?",[Headers = headers]),
+				    json = Json.Document(result),
+				    to_table = Table.FromRecords({json}), //TODO: fix this
+				
+				    output = to_table
+				in
+				    output
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

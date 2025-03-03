@@ -1,0 +1,17 @@
+relationship AutoDetected_8733727c-fe0f-47e4-a62d-d4cfab0b3c19
+	fromColumn: spotlight.teamId
+	toColumn: team.id
+
+relationship AutoDetected_47bb83be-989e-4745-b03f-da8e17e67122
+	fromColumn: spotlight.teamLogo
+	toColumn: standing_now.teamLogo
+
+relationship AutoDetected_55b9fdbe-8c79-44af-8064-e3837526141e
+	fromColumn: standing_now.seasonId
+	toColumn: season.season
+
+relationship 4642a497-67fa-428a-b235-5cecedc100fe
+	joinOnDateBehavior: datePartOnly
+	fromColumn: schedule.date
+	toColumn: LocalDateTable_da6c6320-46f7-49b0-bc32-0dc0710df7d2.Date
+

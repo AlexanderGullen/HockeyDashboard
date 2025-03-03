@@ -1,0 +1,137 @@
+table team
+	lineageTag: d935032c-d5c1-40d7-bf4f-b95b74e7be09
+
+	column id
+		dataType: string
+		lineageTag: 0cc50dbd-8c5e-4359-8e51-f8be7e21dbdd
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column franchiseId
+		dataType: string
+		lineageTag: ab39388e-0c7a-4c4b-8c95-2fbdfe576288
+		summarizeBy: none
+		sourceColumn: franchiseId
+
+		annotation SummarizationSetBy = Automatic
+
+	column fullName
+		dataType: string
+		lineageTag: 3821d642-6314-4a2a-8ed9-c4f67b48a091
+		summarizeBy: none
+		sourceColumn: fullName
+
+		annotation SummarizationSetBy = Automatic
+
+	column leagueId
+		dataType: string
+		lineageTag: b2fdf062-0711-41cc-bbb4-4c194725cfac
+		summarizeBy: none
+		sourceColumn: leagueId
+
+		annotation SummarizationSetBy = Automatic
+
+	column rawTricode
+		dataType: string
+		lineageTag: ed6305bf-d9b6-40f7-97bb-a8a3d9bdb8c8
+		summarizeBy: none
+		sourceColumn: rawTricode
+
+		annotation SummarizationSetBy = Automatic
+
+	column triCode
+		dataType: string
+		lineageTag: 1879de6c-a16a-4ca9-b045-ccb971cf83e7
+		summarizeBy: none
+		sourceColumn: triCode
+
+		annotation SummarizationSetBy = Automatic
+
+	partition team = m
+		mode: import
+		source =
+				let
+				    headers = [#"Content-type" = "application/json"],
+				    result = Web.Contents("https://api.nhle.com/stats/rest/en/team",[Headers = headers]),
+				    json = Json.Document(result),
+				    to_table = Table.FromRecords(json[data]),
+				    logos_and_status = // data collected manually
+				    {[]},
+				    //TODO: manually find logo & active status
+				
+				
+				
+				/*
+				Quebec Nordiques
+				Montréal Canadiens
+				Toronto St. Patricks
+				Buffalo Sabres
+				Oakland Seals
+				Kansas City Scouts
+				New York Islanders
+				Ottawa Senators (1917)
+				To be determined
+				Atlanta Thrashers
+				St. Louis Eagles
+				Winnipeg Jets (1979)
+				San Jose Sharks
+				Quebec Bulldogs
+				Columbus Blue Jackets
+				Arizona Coyotes
+				Pittsburgh Penguins
+				Florida Panthers
+				Carolina Hurricanes
+				Vegas Golden Knights
+				Dallas Stars
+				Winnipeg Jets
+				Tampa Bay Lightning
+				Utah Hockey Club
+				Nashville Predators
+				Phoenix Coyotes
+				Montreal Wanderers
+				Philadelphia Quakers
+				Hamilton Tigers
+				Detroit Cougars
+				Colorado Rockies
+				Pittsburgh Pirates
+				Hartford Whalers
+				Philadelphia Flyers
+				New Jersey Devils
+				Ottawa Senators
+				Colorado Avalanche
+				New York Americans
+				Seattle Kraken
+				Washington Capitals
+				Anaheim Ducks
+				Minnesota North Stars
+				Los Angeles Kings
+				Vancouver Canucks
+				NHL
+				Minnesota Wild
+				Montreal Maroons
+				Cleveland Barons
+				Brooklyn Americans
+				Detroit Falcons
+				California Golden Seals
+				Toronto Maple Leafs
+				New York Rangers
+				Edmonton Oilers
+				Atlanta Flames
+				Toronto Arenas
+				Calgary Flames
+				Boston Bruins
+				St. Louis Blues
+				Chicago Blackhawks
+				Detroit Red Wings
+				*/
+				
+				    output = to_table
+				in
+				    output
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

@@ -1,4 +1,5 @@
 table season
+	excludeFromModelRefresh
 	lineageTag: 0f8239df-834a-45bc-a4e5-d8ad8512b8a9
 
 	column season

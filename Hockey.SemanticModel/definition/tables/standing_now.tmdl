@@ -1,0 +1,689 @@
+table standing_now
+	excludeFromModelRefresh
+	lineageTag: 87320abf-968b-4f2a-b2a7-ce88313e0368
+
+	column conferenceAbbrev
+		dataType: string
+		lineageTag: 612a5f9a-2c4a-4bc7-8f45-a904dc2ad8dd
+		summarizeBy: none
+		sourceColumn: conferenceAbbrev
+
+		annotation SummarizationSetBy = Automatic
+
+	column conferenceHomeSequence
+		dataType: string
+		lineageTag: d2781cf1-8db3-4cf8-b84b-879d791cd23d
+		summarizeBy: none
+		sourceColumn: conferenceHomeSequence
+
+		annotation SummarizationSetBy = Automatic
+
+	column conferenceL10Sequence
+		dataType: string
+		lineageTag: 0dd8949b-6e9d-41c7-a7ff-6ad59d5a715f
+		summarizeBy: none
+		sourceColumn: conferenceL10Sequence
+
+		annotation SummarizationSetBy = Automatic
+
+	column conferenceName
+		dataType: string
+		lineageTag: 2f9c2d51-9b74-42f5-937f-ce170504c464
+		summarizeBy: none
+		sourceColumn: conferenceName
+
+		annotation SummarizationSetBy = Automatic
+
+	column conferenceRoadSequence
+		dataType: string
+		lineageTag: 26334104-43db-4ddf-bfa0-478837a0ba96
+		summarizeBy: none
+		sourceColumn: conferenceRoadSequence
+
+		annotation SummarizationSetBy = Automatic
+
+	column conferenceSequence
+		dataType: string
+		lineageTag: 378dc2ba-3c59-471f-849c-f37ad7668eb6
+		summarizeBy: none
+		sourceColumn: conferenceSequence
+
+		annotation SummarizationSetBy = Automatic
+
+	column date
+		dataType: string
+		lineageTag: 40b3c360-7be5-4c00-8947-e2b28121b077
+		summarizeBy: none
+		sourceColumn: date
+
+		annotation SummarizationSetBy = Automatic
+
+	column divisionAbbrev
+		dataType: string
+		lineageTag: 14b723b1-d94c-4a29-95d3-3d5516e2a345
+		summarizeBy: none
+		sourceColumn: divisionAbbrev
+
+		annotation SummarizationSetBy = Automatic
+
+	column divisionHomeSequence
+		dataType: string
+		lineageTag: 24800106-9bbb-418a-a482-5aba13805588
+		summarizeBy: none
+		sourceColumn: divisionHomeSequence
+
+		annotation SummarizationSetBy = Automatic
+
+	column divisionL10Sequence
+		dataType: string
+		lineageTag: 5f3e32f2-cf86-468a-84e3-fa6a4fe742bd
+		summarizeBy: none
+		sourceColumn: divisionL10Sequence
+
+		annotation SummarizationSetBy = Automatic
+
+	column divisionName
+		dataType: string
+		lineageTag: 4b83de40-b684-44f1-a9b4-76af97a66a94
+		summarizeBy: none
+		sourceColumn: divisionName
+
+		annotation SummarizationSetBy = Automatic
+
+	column divisionRoadSequence
+		dataType: string
+		lineageTag: f0e68bcb-7885-4a25-8544-bf60111bec98
+		summarizeBy: none
+		sourceColumn: divisionRoadSequence
+
+		annotation SummarizationSetBy = Automatic
+
+	column divisionSequence
+		dataType: string
+		lineageTag: 7f688854-4134-4f12-ae5d-20992e6c3e6a
+		summarizeBy: none
+		sourceColumn: divisionSequence
+
+		annotation SummarizationSetBy = Automatic
+
+	column gameTypeId
+		dataType: string
+		lineageTag: fd193d85-04d4-46d1-b909-f33358b08224
+		summarizeBy: none
+		sourceColumn: gameTypeId
+
+		annotation SummarizationSetBy = Automatic
+
+	column gamesPlayed
+		dataType: int64
+		formatString: 0
+		lineageTag: 162b32e9-54f2-4458-b729-69fa3eb695fa
+		summarizeBy: sum
+		sourceColumn: gamesPlayed
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+	column goalDifferential
+		dataType: string
+		lineageTag: 5165c77f-1b23-4a45-b2c2-f84aa44f0b72
+		summarizeBy: none
+		sourceColumn: goalDifferential
+
+		annotation SummarizationSetBy = Automatic
+
+	column goalDifferentialPctg
+		dataType: string
+		lineageTag: c4f2e846-8055-4fcf-8eda-5c191a2e6bd6
+		summarizeBy: none
+		sourceColumn: goalDifferentialPctg
+
+		annotation SummarizationSetBy = Automatic
+
+	column goalAgainst
+		dataType: string
+		lineageTag: a5a5634a-9b3f-4e3e-80f2-14e585ac7e55
+		summarizeBy: none
+		sourceColumn: goalAgainst
+
+		annotation SummarizationSetBy = Automatic
+
+	column goalFor
+		dataType: string
+		lineageTag: 2a35a510-d40e-40f8-8ca4-adf3b6eca5b3
+		summarizeBy: none
+		sourceColumn: goalFor
+
+		annotation SummarizationSetBy = Automatic
+
+	column goalsForPctg
+		dataType: string
+		lineageTag: 250ab25b-61df-4bdc-b15e-18668ec4fede
+		summarizeBy: none
+		sourceColumn: goalsForPctg
+
+		annotation SummarizationSetBy = Automatic
+
+	column homeGamesPlayed
+		dataType: string
+		lineageTag: 2df1863f-5c90-44a8-b6d7-2730bb07e865
+		summarizeBy: none
+		sourceColumn: homeGamesPlayed
+
+		annotation SummarizationSetBy = Automatic
+
+	column homeGoalDifferential
+		dataType: string
+		lineageTag: f7db61ed-bf1f-4170-84fd-6d2fcb526c9b
+		summarizeBy: none
+		sourceColumn: homeGoalDifferential
+
+		annotation SummarizationSetBy = Automatic
+
+	column homeGoalsAgainst
+		dataType: string
+		lineageTag: 03225518-4ba3-4456-a5d5-770cbf2a9f12
+		summarizeBy: none
+		sourceColumn: homeGoalsAgainst
+
+		annotation SummarizationSetBy = Automatic
+
+	column homeGoalsFor
+		dataType: string
+		lineageTag: fd20eed2-d591-40fa-8e2d-6686ba70eb53
+		summarizeBy: none
+		sourceColumn: homeGoalsFor
+
+		annotation SummarizationSetBy = Automatic
+
+	column homeLosses
+		dataType: string
+		lineageTag: 9892e7e9-385b-4360-b28a-d9e69094ec72
+		summarizeBy: none
+		sourceColumn: homeLosses
+
+		annotation SummarizationSetBy = Automatic
+
+	column homeOtLosses
+		dataType: string
+		lineageTag: 5c73c88e-7086-4c39-b4c2-719937a18cfd
+		summarizeBy: none
+		sourceColumn: homeOtLosses
+
+		annotation SummarizationSetBy = Automatic
+
+	column homePoints
+		dataType: string
+		lineageTag: 4c6d86b9-cbc9-46ba-aab4-4a3c01507e5e
+		summarizeBy: none
+		sourceColumn: homePoints
+
+		annotation SummarizationSetBy = Automatic
+
+	column homeRegulationPlusOtWins
+		dataType: string
+		lineageTag: 2df4b932-9423-4430-ac7a-de01c65d47fc
+		summarizeBy: none
+		sourceColumn: homeRegulationPlusOtWins
+
+		annotation SummarizationSetBy = Automatic
+
+	column homeRegulationWins
+		dataType: string
+		lineageTag: a57a745e-fe16-4158-b753-4525c62c4e40
+		summarizeBy: none
+		sourceColumn: homeRegulationWins
+
+		annotation SummarizationSetBy = Automatic
+
+	column homeTies
+		dataType: string
+		lineageTag: efe9438c-5b19-4280-b90a-5da6bbc3e2a1
+		summarizeBy: none
+		sourceColumn: homeTies
+
+		annotation SummarizationSetBy = Automatic
+
+	column homeWins
+		dataType: string
+		lineageTag: b56188d9-fa59-4bcc-8dae-495914365107
+		summarizeBy: none
+		sourceColumn: homeWins
+
+		annotation SummarizationSetBy = Automatic
+
+	column l10GamesPlayed
+		dataType: string
+		lineageTag: 9dcfc055-6ac9-4021-8376-a313f9898849
+		summarizeBy: none
+		sourceColumn: l10GamesPlayed
+
+		annotation SummarizationSetBy = Automatic
+
+	column l10GoalDifferential
+		dataType: string
+		lineageTag: d4bd7b62-f31e-4f12-9b68-cc1b9d72f4c1
+		summarizeBy: none
+		sourceColumn: l10GoalDifferential
+
+		annotation SummarizationSetBy = Automatic
+
+	column l10GoalsAgainst
+		dataType: string
+		lineageTag: 3742541e-737a-40bb-ab4f-490c76e95adc
+		summarizeBy: none
+		sourceColumn: l10GoalsAgainst
+
+		annotation SummarizationSetBy = Automatic
+
+	column l10GoalsFor
+		dataType: string
+		lineageTag: 823798fb-ac1f-43e5-9fba-1bcb5197c6f0
+		summarizeBy: none
+		sourceColumn: l10GoalsFor
+
+		annotation SummarizationSetBy = Automatic
+
+	column l10Losses
+		dataType: string
+		lineageTag: 294d68ff-c3cd-4139-934e-539119ff88fa
+		summarizeBy: none
+		sourceColumn: l10Losses
+
+		annotation SummarizationSetBy = Automatic
+
+	column l10OtLosses
+		dataType: string
+		lineageTag: 48cfbc72-dbbd-478d-a354-3fa4e59adde3
+		summarizeBy: none
+		sourceColumn: l10OtLosses
+
+		annotation SummarizationSetBy = Automatic
+
+	column l10Points
+		dataType: string
+		lineageTag: e42e855a-19e7-405b-a3e0-0b75f7fe9d11
+		summarizeBy: none
+		sourceColumn: l10Points
+
+		annotation SummarizationSetBy = Automatic
+
+	column l10RegulationPlusOtWins
+		dataType: string
+		lineageTag: b0a64dbf-6c85-4ba9-aaa6-f22c82a3530e
+		summarizeBy: none
+		sourceColumn: l10RegulationPlusOtWins
+
+		annotation SummarizationSetBy = Automatic
+
+	column l10RegulationWins
+		dataType: string
+		lineageTag: addb012b-acf0-4973-bd75-e90e125505c8
+		summarizeBy: none
+		sourceColumn: l10RegulationWins
+
+		annotation SummarizationSetBy = Automatic
+
+	column l10Ties
+		dataType: string
+		lineageTag: 00961741-452e-4f78-a466-7b042a33e79b
+		summarizeBy: none
+		sourceColumn: l10Ties
+
+		annotation SummarizationSetBy = Automatic
+
+	column l10Wins
+		dataType: string
+		lineageTag: 6cebb616-5ec1-4d78-9308-9652080074a1
+		summarizeBy: none
+		sourceColumn: l10Wins
+
+		annotation SummarizationSetBy = Automatic
+
+	column leagueHomeSequence
+		dataType: string
+		lineageTag: 879ebf5e-4a2c-4103-a77e-89952c248483
+		summarizeBy: none
+		sourceColumn: leagueHomeSequence
+
+		annotation SummarizationSetBy = Automatic
+
+	column leagueL10Sequence
+		dataType: string
+		lineageTag: b833ab15-f6f7-49cd-b020-28b772e3f2e0
+		summarizeBy: none
+		sourceColumn: leagueL10Sequence
+
+		annotation SummarizationSetBy = Automatic
+
+	column leagueRoadSequence
+		dataType: string
+		lineageTag: 433d2855-d574-447b-b093-c45129f6718d
+		summarizeBy: none
+		sourceColumn: leagueRoadSequence
+
+		annotation SummarizationSetBy = Automatic
+
+	column leagueSequence
+		dataType: string
+		lineageTag: 466ef6d2-790f-43cd-b6e9-a7541f065b93
+		summarizeBy: none
+		sourceColumn: leagueSequence
+
+		annotation SummarizationSetBy = Automatic
+
+	column losses
+		dataType: string
+		lineageTag: d633a0c0-a7a7-4498-9b1a-c7c60b95ceea
+		summarizeBy: none
+		sourceColumn: losses
+
+		annotation SummarizationSetBy = Automatic
+
+	column otLosses
+		dataType: string
+		lineageTag: e4cdef9e-0203-45b0-9e96-3c234e3537ff
+		summarizeBy: none
+		sourceColumn: otLosses
+
+		annotation SummarizationSetBy = Automatic
+
+	column placeName
+		dataType: string
+		lineageTag: 9b120931-3ef0-4bb2-a57f-664befdc4cbb
+		summarizeBy: none
+		sourceColumn: placeName
+
+		annotation SummarizationSetBy = Automatic
+
+	column pointPctg
+		dataType: string
+		lineageTag: 5e12a682-c37c-4531-b413-7444ba808647
+		summarizeBy: none
+		sourceColumn: pointPctg
+
+		annotation SummarizationSetBy = Automatic
+
+	column points
+		dataType: string
+		lineageTag: 2417ffb3-1e24-416e-b1ac-9656565a6491
+		summarizeBy: none
+		sourceColumn: points
+
+		annotation SummarizationSetBy = Automatic
+
+	column regulationPlusOtWinPctg
+		dataType: string
+		lineageTag: 986a369e-2ecf-4e1a-b219-e4d4dad9888f
+		summarizeBy: none
+		sourceColumn: regulationPlusOtWinPctg
+
+		annotation SummarizationSetBy = Automatic
+
+	column regulationPlusOtWins
+		dataType: string
+		lineageTag: 45ef6df4-22b0-4e5d-91f9-6d5f2c660ddf
+		summarizeBy: none
+		sourceColumn: regulationPlusOtWins
+
+		annotation SummarizationSetBy = Automatic
+
+	column regulationWinPctg
+		dataType: string
+		lineageTag: 2e5c0c12-114f-47e7-9e6f-fa326493290c
+		summarizeBy: none
+		sourceColumn: regulationWinPctg
+
+		annotation SummarizationSetBy = Automatic
+
+	column regulationWins
+		dataType: string
+		lineageTag: 6daa553a-9a8b-40a5-9e04-27bf933de839
+		summarizeBy: none
+		sourceColumn: regulationWins
+
+		annotation SummarizationSetBy = Automatic
+
+	column roadGamesPlayed
+		dataType: string
+		lineageTag: 78212397-8919-4117-a3b4-1a2a0903734c
+		summarizeBy: none
+		sourceColumn: roadGamesPlayed
+
+		annotation SummarizationSetBy = Automatic
+
+	column roadGoalDifferential
+		dataType: string
+		lineageTag: 06ac062f-5a2e-4ec4-aeb8-1ed0ef326fd7
+		summarizeBy: none
+		sourceColumn: roadGoalDifferential
+
+		annotation SummarizationSetBy = Automatic
+
+	column roadGoalsAgainst
+		dataType: string
+		lineageTag: 0ad0b0ee-bbce-41cf-9b1e-8040efc17d1b
+		summarizeBy: none
+		sourceColumn: roadGoalsAgainst
+
+		annotation SummarizationSetBy = Automatic
+
+	column roadGoalsFor
+		dataType: string
+		lineageTag: 396bf5d0-3eb0-4125-832c-e9a2d607f598
+		summarizeBy: none
+		sourceColumn: roadGoalsFor
+
+		annotation SummarizationSetBy = Automatic
+
+	column roadLosses
+		dataType: string
+		lineageTag: d526719b-9725-4576-9a93-f6b0d9b8391b
+		summarizeBy: none
+		sourceColumn: roadLosses
+
+		annotation SummarizationSetBy = Automatic
+
+	column roadOtLosses
+		dataType: string
+		lineageTag: ab2647e1-c661-4a9e-a40c-cfe22c1b17d4
+		summarizeBy: none
+		sourceColumn: roadOtLosses
+
+		annotation SummarizationSetBy = Automatic
+
+	column roadPoints
+		dataType: string
+		lineageTag: 6b587b6e-0c24-4e45-8732-95a67c08c1be
+		summarizeBy: none
+		sourceColumn: roadPoints
+
+		annotation SummarizationSetBy = Automatic
+
+	column roadRegulationPlusOtWins
+		dataType: string
+		lineageTag: 2aa56e8d-8df1-4db9-8fab-e34969b17195
+		summarizeBy: none
+		sourceColumn: roadRegulationPlusOtWins
+
+		annotation SummarizationSetBy = Automatic
+
+	column roadRegulationWins
+		dataType: string
+		lineageTag: 136d9412-93e3-45fb-a381-68021b921271
+		summarizeBy: none
+		sourceColumn: roadRegulationWins
+
+		annotation SummarizationSetBy = Automatic
+
+	column roadTies
+		dataType: string
+		lineageTag: ba1ac92e-78c0-4022-8cb0-fb84347709d2
+		summarizeBy: none
+		sourceColumn: roadTies
+
+		annotation SummarizationSetBy = Automatic
+
+	column roadWins
+		dataType: string
+		lineageTag: 7e034e32-150a-4264-9295-f215def69c0a
+		summarizeBy: none
+		sourceColumn: roadWins
+
+		annotation SummarizationSetBy = Automatic
+
+	column seasonId
+		dataType: string
+		lineageTag: 54bcbbd1-8b2a-4f2b-8879-5593e10d1437
+		summarizeBy: none
+		sourceColumn: seasonId
+
+		annotation SummarizationSetBy = Automatic
+
+	column shootoutLosses
+		dataType: string
+		lineageTag: 476bc2f6-67f7-4c88-874e-82eed1820275
+		summarizeBy: none
+		sourceColumn: shootoutLosses
+
+		annotation SummarizationSetBy = Automatic
+
+	column shootoutWins
+		dataType: string
+		lineageTag: e9911a45-4db6-468e-93f3-5398356adef0
+		summarizeBy: none
+		sourceColumn: shootoutWins
+
+		annotation SummarizationSetBy = Automatic
+
+	column streakCode
+		dataType: string
+		lineageTag: e25f9ee7-726e-48a3-ba6e-f8358c8be7cc
+		summarizeBy: none
+		sourceColumn: streakCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column streakCount
+		dataType: string
+		lineageTag: ab38d0c4-398a-4ed2-b754-e40537cae0a9
+		summarizeBy: none
+		sourceColumn: streakCount
+
+		annotation SummarizationSetBy = Automatic
+
+	column teamName
+		dataType: string
+		lineageTag: 551bf91a-7851-472c-895b-cba4641a888d
+		summarizeBy: none
+		sourceColumn: teamName
+
+		annotation SummarizationSetBy = Automatic
+
+	column teamCommonName
+		dataType: string
+		lineageTag: 075fde9e-ccc9-4b27-9297-d7741c1a0a5a
+		summarizeBy: none
+		sourceColumn: teamCommonName
+
+		annotation SummarizationSetBy = Automatic
+
+	column teamAbbrev
+		dataType: string
+		lineageTag: ce6e7c49-e152-41cf-bcca-c2aec44f91d1
+		summarizeBy: none
+		sourceColumn: teamAbbrev
+
+		annotation SummarizationSetBy = Automatic
+
+	column teamLogo
+		dataType: string
+		lineageTag: d35188da-cc1d-4bf9-946c-86fa17865d7c
+		dataCategory: ImageUrl
+		summarizeBy: none
+		sourceColumn: teamLogo
+
+		annotation SummarizationSetBy = Automatic
+
+	column ties
+		dataType: string
+		lineageTag: f459294c-35d9-496f-a0e3-7476983adbdf
+		summarizeBy: none
+		sourceColumn: ties
+
+		annotation SummarizationSetBy = Automatic
+
+	column waiversSequence
+		dataType: string
+		lineageTag: e3db7075-cc9f-4e04-b3d2-c025c8d8f95f
+		summarizeBy: none
+		sourceColumn: waiversSequence
+
+		annotation SummarizationSetBy = Automatic
+
+	column wildcardSequence
+		dataType: string
+		lineageTag: f86c0405-3506-483a-907b-6df7b66e3223
+		summarizeBy: none
+		sourceColumn: wildcardSequence
+
+		annotation SummarizationSetBy = Automatic
+
+	column winPctg
+		dataType: string
+		lineageTag: 6f8c85b1-33da-44a9-9baf-d8be36e76eb7
+		summarizeBy: none
+		sourceColumn: winPctg
+
+		annotation SummarizationSetBy = Automatic
+
+	column wins
+		dataType: string
+		lineageTag: 32864c2c-73bb-4d06-8197-2d0d6acdf3d8
+		summarizeBy: none
+		sourceColumn: wins
+
+		annotation SummarizationSetBy = Automatic
+
+	column teamDefaultName
+		dataType: string
+		lineageTag: a495c62b-7f7a-4369-b1af-7d2968b2aae8
+		summarizeBy: none
+		sourceColumn: teamDefaultName
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy standing
+		lineageTag: 421c10bb-1f73-47f3-9b51-e3c8f5d6da0d
+
+		level conferenceName
+			lineageTag: 130e391e-3dad-4b8f-bdfe-c009cd048d88
+			column: conferenceName
+
+		level divisionName
+			lineageTag: d0937517-cbf8-47b0-9fcc-6ad458a471af
+			column: divisionName
+
+		level teamDefaultName
+			lineageTag: 4c80d501-9854-40eb-8dd2-ba3b7f1ecca3
+			column: teamDefaultName
+
+	partition standing_now = m
+		mode: import
+		source =
+				let
+				    headers = [#"Content-type" = "application/json"],
+				    result = Web.Contents("https://api-web.nhle.com/v1/standings/now",[Headers = headers]),
+				    json = Json.Document(result),
+				    standings = Table.FromRecords(json[standings]),
+				    defaultName = Table.AddColumn(standings,"teamDefaultName",each [teamName][default]),
+				
+				    output = defaultName
+				in
+				    output
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

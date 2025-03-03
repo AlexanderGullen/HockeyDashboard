@@ -1,19 +1,33 @@
 table schedule
 	lineageTag: 538354af-fa1d-4fad-b42a-c248622966e0
 
-	column Name
-		dataType: string
-		lineageTag: 0ba2ae93-3e8d-4641-a151-e3685496f6f9
+	column date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 17632fb9-880e-4dce-8ef8-d5b2f11c8903
 		summarizeBy: none
-		sourceColumn: Name
+		sourceColumn: date
+
+		variation Variation
+			isDefault
+			relationship: 4642a497-67fa-428a-b235-5cecedc100fe
+			defaultHierarchy: LocalDateTable_da6c6320-46f7-49b0-bc32-0dc0710df7d2.'Date Hierarchy'
 
 		annotation SummarizationSetBy = Automatic
 
-	column Value
+	column label
 		dataType: string
-		lineageTag: 831a8b51-41d5-4b0e-a367-7596862dda20
+		lineageTag: c69f423b-6c21-4db4-b8d2-26e66b7e0827
 		summarizeBy: none
-		sourceColumn: Value
+		sourceColumn: label
+
+		annotation SummarizationSetBy = Automatic
+
+	column source
+		dataType: string
+		lineageTag: 47ec36a2-15dc-41ca-b963-8a1b204c3e66
+		summarizeBy: none
+		sourceColumn: source
 
 		annotation SummarizationSetBy = Automatic
 
@@ -25,11 +39,18 @@ table schedule
 				    result = Web.Contents("https://api-web.nhle.com/v1/schedule/2025-03-01",[Headers = headers]), //TODO: abstract the date to a parameter
 				    json = Json.Document(result),
 				
-				    output = json
+				    output = #table(type table [date = datetime, label = text, source = text],{
+				        {DateTime.LocalNow(), "Today","custom"},
+				        {DateTime.FromText(json[nextStartDate]),"Next Game","api"},
+				        {DateTime.FromText(json[preSeasonStartDate]),"Pre Season Start","api"},
+				        {DateTime.FromText(json[regularSeasonStartDate]),"Regular Season Start","api"},
+				        {DateTime.FromText(json[regularSeasonEndDate]),"Playoff Start Date","api"},
+				        {DateTime.FromText(json[playoffEndDate]),"Playoff End Date","api"}
+				    })
 				in
 				    output
 
 	annotation PBI_NavigationStepName = Navigation
 
-	annotation PBI_ResultType = Record
+	annotation PBI_ResultType = Table
 
