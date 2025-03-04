@@ -11,7 +11,7 @@
         {
           "location": {
             "x": 0,
-            "y": 39.84375
+            "y": 50.390625
           },
           "nodeIndex": "spotlight",
           "size": {
@@ -23,7 +23,7 @@
         {
           "location": {
             "x": 284,
-            "y": 137.84375
+            "y": 148.390625
           },
           "nodeIndex": "season",
           "nodeLineageTag": "0f8239df-834a-45bc-a4e5-d8ad8512b8a9",
@@ -36,7 +36,7 @@
         {
           "location": {
             "x": 568,
-            "y": 125.84375
+            "y": 136.390625
           },
           "nodeIndex": "schedule",
           "nodeLineageTag": "538354af-fa1d-4fad-b42a-c248622966e0",
@@ -49,7 +49,7 @@
         {
           "location": {
             "x": 852,
-            "y": 39.84375
+            "y": 50.390625
           },
           "nodeIndex": "standing_season",
           "nodeLineageTag": "2b8e005b-e581-4f2f-be57-c69b9fd18632",
@@ -62,7 +62,7 @@
         {
           "location": {
             "x": 1136,
-            "y": 39.84375
+            "y": 50.390625
           },
           "nodeIndex": "player_landing",
           "nodeLineageTag": "6bbe1fa2-fd18-45ba-9262-20c50ceb19cd",
@@ -75,7 +75,7 @@
         {
           "location": {
             "x": 2840,
-            "y": 77.84375
+            "y": 88.390625
           },
           "nodeIndex": "team",
           "nodeLineageTag": "d935032c-d5c1-40d7-bf4f-b95b74e7be09",
@@ -88,7 +88,7 @@
         {
           "location": {
             "x": 3124,
-            "y": 21.09375
+            "y": 31.640625
           },
           "nodeIndex": "standing_now",
           "nodeLineageTag": "87320abf-968b-4f2a-b2a7-ce88313e0368",
@@ -101,7 +101,7 @@
         {
           "location": {
             "x": 3408,
-            "y": 107.09375
+            "y": 117.640625
           },
           "nodeIndex": "Points",
           "nodeLineageTag": "4bb570a5-6772-42a6-a09e-a5ebfcfb54e0",
@@ -114,11 +114,24 @@
         {
           "location": {
             "x": 3692,
-            "y": 66.40625
+            "y": 76.953125
           },
           "nodeIndex": "_remaining",
           "size": {
             "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3976,
+            "y": 93.921875
+          },
+          "nodeIndex": "game",
+          "nodeLineageTag": "f33b89d3-958d-42fb-adda-a6ef6a703d84",
+          "size": {
+            "height": 152,
             "width": 234
           },
           "zIndex": 0

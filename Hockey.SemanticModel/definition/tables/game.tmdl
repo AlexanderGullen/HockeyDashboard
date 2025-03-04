@@ -1,0 +1,56 @@
+table game
+	lineageTag: f33b89d3-958d-42fb-adda-a6ef6a703d84
+
+	column date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: ee42e28f-f798-4f1d-b1ef-5f4ca3096522
+		summarizeBy: none
+		sourceColumn: date
+
+		variation Variation
+			isDefault
+			relationship: 47d2c3fc-14cc-40dc-bc56-139656e3ca46
+			defaultHierarchy: LocalDateTable_c25819b7-b5ce-4211-ae85-22f1e2728760.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column label
+		dataType: string
+		lineageTag: ad3f87b6-8f3f-48d6-aa75-e8e8c341fd4b
+		summarizeBy: none
+		sourceColumn: label
+
+		annotation SummarizationSetBy = Automatic
+
+	column source
+		dataType: string
+		lineageTag: 00f9e7d6-8968-49ad-8a84-b8f80572202c
+		summarizeBy: none
+		sourceColumn: source
+
+		annotation SummarizationSetBy = Automatic
+
+	partition game = m
+		mode: import
+		source =
+				let
+				    headers = [#"Content-type" = "application/json"],
+				    result = Web.Contents("https://api-web.nhle.com/v1/schedule/2025-03-01",[Headers = headers]), //TODO: abstract the date to a parameter
+				    json = Json.Document(result),
+				
+				    output = #table(type table [date = datetime, label = text, source = text],{
+				        {DateTime.LocalNow(), "Today","custom"},
+				        {DateTime.FromText(json[nextStartDate]),"Next Game","api"},
+				        {DateTime.FromText(json[preSeasonStartDate]),"Pre Season Start","api"},
+				        {DateTime.FromText(json[regularSeasonStartDate]),"Regular Season Start","api"},
+				        {DateTime.FromText(json[regularSeasonEndDate]),"Playoff Start Date","api"},
+				        {DateTime.FromText(json[playoffEndDate]),"Playoff End Date","api"}
+				    })
+				in
+				    output
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

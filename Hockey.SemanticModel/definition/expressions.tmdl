@@ -1,0 +1,26 @@
+expression _fetch_play_by_play =
+		let
+		    fetch = (game_id) =>
+		    let
+		        headers = [#"Content-type" = "application/json"],
+		        endpoint = Text.Combine({"https://api-web.nhle.com/v1/gamecenter/", game_id, "/play-by-play"}),
+		        callback = () => Web.Contents(endpoint,[Headers = headers]),
+		        result = Function.InvokeAfter(callback,#duration(0,0,0,0,0.8)),
+		        json = Json.Document(result),
+		
+		        // set values that are missing in games that haven't been played yet to null
+		        add_period_descriptor = if Record.HasFields(json,"periodDescriptor") then json else Record.AddField(json,"periodDescriptor",null),
+		        add_game_outcome = if Record.HasFields(add_period_descriptor,"gameOutcome") then add_period_descriptor else Record.AddField(add_period_descriptor,"gameOutcome",null),
+		        add_summary = if Record.HasFields(add_game_outcome,"summary") then add_game_outcome else Record.AddField(add_game_outcome,"summary",null),
+		
+		        output = endpoint
+		    in
+		        output
+		in
+		    fetch
+	lineageTag: 07f89b94-20ff-46bf-a067-6db1c0ada1d7
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Function
+
