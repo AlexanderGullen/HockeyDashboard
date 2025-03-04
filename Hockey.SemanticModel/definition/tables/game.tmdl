@@ -1,0 +1,251 @@
+table game
+	lineageTag: a42e2282-7b4d-4296-8388-9d129bca2947
+
+	column id
+		dataType: string
+		lineageTag: 05b09d85-4d4d-4815-8065-c994bd0ab9d3
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column season
+		dataType: string
+		lineageTag: e2bdfe63-c35b-45eb-b548-b21c505cae50
+		summarizeBy: none
+		sourceColumn: season
+
+		annotation SummarizationSetBy = Automatic
+
+	column gameType
+		dataType: string
+		lineageTag: 6676c345-3ddf-4bc7-9883-e64489329229
+		summarizeBy: none
+		sourceColumn: gameType
+
+		annotation SummarizationSetBy = Automatic
+
+	column limitedScoring
+		dataType: string
+		lineageTag: 8a21fa56-85ef-48c5-b35b-6e9649ba4731
+		summarizeBy: none
+		sourceColumn: limitedScoring
+
+		annotation SummarizationSetBy = Automatic
+
+	column gameDate
+		dataType: string
+		lineageTag: 6117ba95-dfe4-4bf0-b410-cdc80bb5e06e
+		summarizeBy: none
+		sourceColumn: gameDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column venue
+		dataType: string
+		lineageTag: c030c290-88e9-4124-b2bd-d86f96f4777a
+		summarizeBy: none
+		sourceColumn: venue
+
+		annotation SummarizationSetBy = Automatic
+
+	column venueLocation
+		dataType: string
+		lineageTag: 9736bcf6-44db-419c-8e9b-dece82b53278
+		summarizeBy: none
+		sourceColumn: venueLocation
+
+		annotation SummarizationSetBy = Automatic
+
+	column startTimeUTC
+		dataType: string
+		lineageTag: 05bf4252-12fa-4b3f-946b-996d90b02cb0
+		summarizeBy: none
+		sourceColumn: startTimeUTC
+
+		annotation SummarizationSetBy = Automatic
+
+	column easternUTCOffset
+		dataType: string
+		lineageTag: e07af2d8-218e-41d3-9774-bf594c7b5582
+		summarizeBy: none
+		sourceColumn: easternUTCOffset
+
+		annotation SummarizationSetBy = Automatic
+
+	column venueUTCOffset
+		dataType: string
+		lineageTag: 03d497cd-92cf-4c8c-bb48-5406a6762a59
+		summarizeBy: none
+		sourceColumn: venueUTCOffset
+
+		annotation SummarizationSetBy = Automatic
+
+	column tvBroadcasts
+		dataType: string
+		lineageTag: 52d10ae4-034a-477b-85ce-ddf96b9afe2e
+		summarizeBy: none
+		sourceColumn: tvBroadcasts
+
+		annotation SummarizationSetBy = Automatic
+
+	column gameState
+		dataType: string
+		lineageTag: ce99f432-c8b3-40b6-905c-aa82fd83a3af
+		summarizeBy: none
+		sourceColumn: gameState
+
+		annotation SummarizationSetBy = Automatic
+
+	column gameScheduleState
+		dataType: string
+		lineageTag: 1a8848f0-ac44-4c6d-bfba-f17705dd7592
+		summarizeBy: none
+		sourceColumn: gameScheduleState
+
+		annotation SummarizationSetBy = Automatic
+
+	column periodDescriptor
+		dataType: string
+		lineageTag: c5678cad-13f1-49b5-a6bc-5f99f7e00370
+		summarizeBy: none
+		sourceColumn: periodDescriptor
+
+		annotation SummarizationSetBy = Automatic
+
+	column awayTeam
+		dataType: string
+		lineageTag: 8f11acf2-8626-4150-8201-b42cd67d2a20
+		summarizeBy: none
+		sourceColumn: awayTeam
+
+		annotation SummarizationSetBy = Automatic
+
+	column homeTeam
+		dataType: string
+		lineageTag: f4f9bf61-e2c4-4a6f-a323-4736592b43c7
+		summarizeBy: none
+		sourceColumn: homeTeam
+
+		annotation SummarizationSetBy = Automatic
+
+	column shootoutInUse
+		dataType: string
+		lineageTag: 89352b07-c2b2-409e-8c2a-9a84a81095ec
+		summarizeBy: none
+		sourceColumn: shootoutInUse
+
+		annotation SummarizationSetBy = Automatic
+
+	column otInUse
+		dataType: string
+		lineageTag: 2ae1822e-40f4-4f01-8eed-100637de4c49
+		summarizeBy: none
+		sourceColumn: otInUse
+
+		annotation SummarizationSetBy = Automatic
+
+	column clock
+		dataType: string
+		lineageTag: 33c868e8-aae7-483d-8243-7e81e6751cf2
+		summarizeBy: none
+		sourceColumn: clock
+
+		annotation SummarizationSetBy = Automatic
+
+	column displayPeriod
+		dataType: string
+		lineageTag: d3a6f252-21ee-45fc-b0e4-08e2bc4d25a9
+		summarizeBy: none
+		sourceColumn: displayPeriod
+
+		annotation SummarizationSetBy = Automatic
+
+	column maxPeriods
+		dataType: string
+		lineageTag: 095fdb23-7285-4fe2-a8d0-2a5e92f00719
+		summarizeBy: none
+		sourceColumn: maxPeriods
+
+		annotation SummarizationSetBy = Automatic
+
+	column gameOutcome
+		dataType: string
+		lineageTag: e8b16334-d55b-47ba-9908-3bdf31f63889
+		summarizeBy: none
+		sourceColumn: gameOutcome
+
+		annotation SummarizationSetBy = Automatic
+
+	column plays
+		dataType: string
+		lineageTag: 5daa96b7-271d-40e5-a759-01263e6706b7
+		summarizeBy: none
+		sourceColumn: plays
+
+		annotation SummarizationSetBy = Automatic
+
+	column rosterSpots
+		dataType: string
+		lineageTag: 187c47d2-1203-4747-bebd-b5e31b2f8d61
+		summarizeBy: none
+		sourceColumn: rosterSpots
+
+		annotation SummarizationSetBy = Automatic
+
+	column regPeriods
+		dataType: string
+		lineageTag: 377e326c-20a7-411c-a1b2-809ade9f83a9
+		summarizeBy: none
+		sourceColumn: regPeriods
+
+		annotation SummarizationSetBy = Automatic
+
+	column summary
+		dataType: string
+		lineageTag: 8b394689-63fb-4670-990a-3ee6211469ed
+		summarizeBy: none
+		sourceColumn: summary
+
+		annotation SummarizationSetBy = Automatic
+
+	column homeAbbrev
+		dataType: string
+		lineageTag: 4edd863f-e1a6-49f1-8648-0358258f0e3c
+		summarizeBy: none
+		sourceColumn: homeAbbrev
+
+		annotation SummarizationSetBy = Automatic
+
+	column awayAbbrev
+		dataType: string
+		lineageTag: f7993c4e-a4c6-470c-922a-32f0e03defab
+		summarizeBy: none
+		sourceColumn: awayAbbrev
+
+		annotation SummarizationSetBy = Automatic
+
+	partition game = m
+		mode: import
+		source =
+				let
+				    A = _fetch_play_by_play("2024020978"),
+				    headers = [#"Content-type" = "application/json"],
+				    result = Web.Contents("https://api-web.nhle.com/v1/schedule/2025-03-01",[Headers = headers]), //TODO: abstract the date to a parameter
+				    json = Json.Document(result),
+				    game_week = Table.FromRecords(json[gameWeek]),
+				    game_week_with_game = Table.ExpandListColumn(game_week,"games"),
+				    game_week_with_game_id = Table.AddColumn(game_week_with_game,"game_id", each Text.From(_[games][id])),
+				    game_week_with_game_play_by_play = Table.AddColumn(game_week_with_game_id,"game", each _fetch_play_by_play(_[game_id])),
+				    game = Table.FromRecords(Table.Column(game_week_with_game_play_by_play,"game")),
+				    game_home = Table.AddColumn(game,"homeAbbrev", each [homeTeam][abbrev]),
+				    game_away = Table.AddColumn(game_home,"awayAbbrev", each [awayTeam][abbrev]),
+				
+				    output = game_away
+				in
+				    output
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+

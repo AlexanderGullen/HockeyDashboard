@@ -5,13 +5,13 @@
       "ordinal": 0,
       "scrollPosition": {
         "x": 0,
-        "y": 0
+        "y": 45.599998474121094
       },
       "nodes": [
         {
           "location": {
             "x": 0,
-            "y": 50.390625
+            "y": 66.2109375
           },
           "nodeIndex": "spotlight",
           "size": {
@@ -23,7 +23,7 @@
         {
           "location": {
             "x": 568,
-            "y": 136.390625
+            "y": 152.2109375
           },
           "nodeIndex": "schedule",
           "nodeLineageTag": "538354af-fa1d-4fad-b42a-c248622966e0",
@@ -36,7 +36,7 @@
         {
           "location": {
             "x": 1136,
-            "y": 50.390625
+            "y": 66.2109375
           },
           "nodeIndex": "player_landing",
           "nodeLineageTag": "6bbe1fa2-fd18-45ba-9262-20c50ceb19cd",
@@ -49,7 +49,7 @@
         {
           "location": {
             "x": 3408,
-            "y": 117.640625
+            "y": 133.4609375
           },
           "nodeIndex": "Points",
           "nodeLineageTag": "4bb570a5-6772-42a6-a09e-a5ebfcfb54e0",
@@ -62,7 +62,7 @@
         {
           "location": {
             "x": 3692,
-            "y": 76.953125
+            "y": 92.7734375
           },
           "nodeIndex": "_remaining",
           "size": {
@@ -74,9 +74,22 @@
         {
           "location": {
             "x": 3124,
-            "y": 31.640625
+            "y": 47.4609375
           },
           "nodeIndex": "standing",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3976,
+            "y": 25.1953125
+          },
+          "nodeIndex": "game",
+          "nodeLineageTag": "a42e2282-7b4d-4296-8388-9d129bca2947",
           "size": {
             "height": 300,
             "width": 234
