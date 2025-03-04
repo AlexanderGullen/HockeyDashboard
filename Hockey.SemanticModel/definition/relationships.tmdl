@@ -15,3 +15,7 @@ relationship 4642a497-67fa-428a-b235-5cecedc100fe
 	fromColumn: schedule.date
 	toColumn: LocalDateTable_da6c6320-46f7-49b0-bc32-0dc0710df7d2.Date
 
+relationship AutoDetected_77f1f0ba-5f5c-40d4-8e18-5cb71eb82ee5
+	fromColumn: game.season
+	toColumn: season.season
+
