@@ -1,103 +1,6 @@
 table _remaining
 	lineageTag: ed0cc5ff-90a1-45f0-8cf6-a4767c36d73c
 
-	column streakCode
-		lineageTag: 117ebeab-c223-4c13-be6b-9c3fc7e8a01b
-		summarizeBy: none
-		isNameInferred
-		sourceColumn: standing_now[streakCode]
-
-		annotation SummarizationSetBy = Automatic
-
-	column streakCount
-		lineageTag: e51a3fda-729f-4f6e-9a12-1121f8837100
-		summarizeBy: none
-		isNameInferred
-		sourceColumn: standing_now[streakCount]
-
-		annotation SummarizationSetBy = Automatic
-
-	column teamName
-		lineageTag: c1d320f7-b28c-451e-a45f-91a893f0e538
-		summarizeBy: none
-		isNameInferred
-		sourceColumn: standing_now[teamName]
-
-		annotation SummarizationSetBy = Automatic
-
-	column teamCommonName
-		lineageTag: a8b17ba0-3237-47f9-a420-d51c0850e6fa
-		summarizeBy: none
-		isNameInferred
-		sourceColumn: standing_now[teamCommonName]
-
-		annotation SummarizationSetBy = Automatic
-
-	column teamAbbrev
-		lineageTag: f37524d2-97dd-496f-ab5a-536e8b627621
-		summarizeBy: none
-		isNameInferred
-		sourceColumn: standing_now[teamAbbrev]
-
-		annotation SummarizationSetBy = Automatic
-
-	column teamLogo
-		lineageTag: c9b4939d-6e54-4798-bdcb-a6e09967bea2
-		dataCategory: ImageUrl
-		summarizeBy: none
-		isNameInferred
-		sourceColumn: standing_now[teamLogo]
-
-		annotation SummarizationSetBy = Automatic
-
-	column ties
-		lineageTag: 74ddedb8-acfb-4705-b0c2-6a6cbf95f0f7
-		summarizeBy: none
-		isNameInferred
-		sourceColumn: standing_now[ties]
-
-		annotation SummarizationSetBy = Automatic
-
-	column waiversSequence
-		lineageTag: 3e7fa892-1f7f-438e-80ee-d46c35d9be4e
-		summarizeBy: none
-		isNameInferred
-		sourceColumn: standing_now[waiversSequence]
-
-		annotation SummarizationSetBy = Automatic
-
-	column wildcardSequence
-		lineageTag: 920e4c25-0e6c-4a80-a562-388c9fcb5f1b
-		summarizeBy: none
-		isNameInferred
-		sourceColumn: standing_now[wildcardSequence]
-
-		annotation SummarizationSetBy = Automatic
-
-	column winPctg
-		lineageTag: 8b1c9232-f663-40ed-8508-5e25db511dfa
-		summarizeBy: none
-		isNameInferred
-		sourceColumn: standing_now[winPctg]
-
-		annotation SummarizationSetBy = Automatic
-
-	column wins
-		lineageTag: f2d788ad-e827-42bc-92fa-303b5e90a134
-		summarizeBy: none
-		isNameInferred
-		sourceColumn: standing_now[wins]
-
-		annotation SummarizationSetBy = Automatic
-
-	column teamDefaultName
-		lineageTag: 89cdfbd8-acf5-47f3-9573-7066d098d7a7
-		summarizeBy: none
-		isNameInferred
-		sourceColumn: standing_now[teamDefaultName]
-
-		annotation SummarizationSetBy = Automatic
-
 	column conferenceAbbrev
 		lineageTag: db158741-601d-4b51-9361-89954fc37ba7
 		summarizeBy: none
@@ -648,6 +551,103 @@ table _remaining
 		summarizeBy: none
 		isNameInferred
 		sourceColumn: standing_now[shootoutWins]
+
+		annotation SummarizationSetBy = Automatic
+
+	column streakCode
+		lineageTag: 117ebeab-c223-4c13-be6b-9c3fc7e8a01b
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: standing_now[streakCode]
+
+		annotation SummarizationSetBy = Automatic
+
+	column streakCount
+		lineageTag: e51a3fda-729f-4f6e-9a12-1121f8837100
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: standing_now[streakCount]
+
+		annotation SummarizationSetBy = Automatic
+
+	column teamName
+		lineageTag: c1d320f7-b28c-451e-a45f-91a893f0e538
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: standing_now[teamName]
+
+		annotation SummarizationSetBy = Automatic
+
+	column teamCommonName
+		lineageTag: a8b17ba0-3237-47f9-a420-d51c0850e6fa
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: standing_now[teamCommonName]
+
+		annotation SummarizationSetBy = Automatic
+
+	column teamAbbrev
+		lineageTag: f37524d2-97dd-496f-ab5a-536e8b627621
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: standing_now[teamAbbrev]
+
+		annotation SummarizationSetBy = Automatic
+
+	column teamLogo
+		lineageTag: c9b4939d-6e54-4798-bdcb-a6e09967bea2
+		dataCategory: ImageUrl
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: standing_now[teamLogo]
+
+		annotation SummarizationSetBy = Automatic
+
+	column ties
+		lineageTag: 74ddedb8-acfb-4705-b0c2-6a6cbf95f0f7
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: standing_now[ties]
+
+		annotation SummarizationSetBy = Automatic
+
+	column waiversSequence
+		lineageTag: 3e7fa892-1f7f-438e-80ee-d46c35d9be4e
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: standing_now[waiversSequence]
+
+		annotation SummarizationSetBy = Automatic
+
+	column wildcardSequence
+		lineageTag: 920e4c25-0e6c-4a80-a562-388c9fcb5f1b
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: standing_now[wildcardSequence]
+
+		annotation SummarizationSetBy = Automatic
+
+	column winPctg
+		lineageTag: 8b1c9232-f663-40ed-8508-5e25db511dfa
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: standing_now[winPctg]
+
+		annotation SummarizationSetBy = Automatic
+
+	column wins
+		lineageTag: f2d788ad-e827-42bc-92fa-303b5e90a134
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: standing_now[wins]
+
+		annotation SummarizationSetBy = Automatic
+
+	column teamDefaultName
+		lineageTag: 89cdfbd8-acf5-47f3-9573-7066d098d7a7
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: standing_now[teamDefaultName]
 
 		annotation SummarizationSetBy = Automatic
 
