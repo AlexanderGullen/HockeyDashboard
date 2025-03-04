@@ -1,4 +1,4 @@
-table standing_now
+table standing
 	excludeFromModelRefresh
 	lineageTag: 87320abf-968b-4f2a-b2a7-ce88313e0368
 
@@ -648,7 +648,7 @@ table standing_now
 
 	column teamDefaultName
 		dataType: string
-		lineageTag: a495c62b-7f7a-4369-b1af-7d2968b2aae8
+		lineageTag: 3e2d42a2-db6b-4b89-b661-afb5977cb47d
 		summarizeBy: none
 		sourceColumn: teamDefaultName
 
@@ -665,11 +665,7 @@ table standing_now
 			lineageTag: d0937517-cbf8-47b0-9fcc-6ad458a471af
 			column: divisionName
 
-		level teamDefaultName
-			lineageTag: 4c80d501-9854-40eb-8dd2-ba3b7f1ecca3
-			column: teamDefaultName
-
-	partition standing_now = m
+	partition standing = m
 		mode: import
 		source =
 				let
@@ -677,6 +673,7 @@ table standing_now
 				    result = Web.Contents("https://api-web.nhle.com/v1/standings/now",[Headers = headers]),
 				    json = Json.Document(result),
 				    standings = Table.FromRecords(json[standings]),
+				    defaultAbbrev = Table.AddColumn(standings,"teamAbbrevString",each [teamAbbrev][default]),
 				    defaultName = Table.AddColumn(standings,"teamDefaultName",each [teamName][default]),
 				
 				    output = defaultName

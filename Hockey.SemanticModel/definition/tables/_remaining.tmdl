@@ -5,7 +5,7 @@ table _remaining
 		lineageTag: db158741-601d-4b51-9361-89954fc37ba7
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[conferenceAbbrev]
+		sourceColumn: standing[conferenceAbbrev]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -13,7 +13,7 @@ table _remaining
 		lineageTag: ba8bd4e7-9fe4-4149-8376-126a70ecb37a
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[conferenceHomeSequence]
+		sourceColumn: standing[conferenceHomeSequence]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -21,7 +21,7 @@ table _remaining
 		lineageTag: 1752a785-6cdf-4d3b-9566-4c6641d62e5b
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[conferenceL10Sequence]
+		sourceColumn: standing[conferenceL10Sequence]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -29,7 +29,7 @@ table _remaining
 		lineageTag: 70b13d2b-6a0c-4c1a-a4d0-1fc5cbbc2c36
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[conferenceName]
+		sourceColumn: standing[conferenceName]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -37,7 +37,7 @@ table _remaining
 		lineageTag: c1a4fef7-449c-4007-bf8c-e8572315a5bb
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[conferenceRoadSequence]
+		sourceColumn: standing[conferenceRoadSequence]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -45,7 +45,7 @@ table _remaining
 		lineageTag: 38f244cf-fa4b-4116-9827-79fba3e8562c
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[conferenceSequence]
+		sourceColumn: standing[conferenceSequence]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -53,7 +53,7 @@ table _remaining
 		lineageTag: a30b10bf-3e18-47e5-9302-8dff16ff585d
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[date]
+		sourceColumn: standing[date]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -61,7 +61,7 @@ table _remaining
 		lineageTag: c558c8c0-0b6b-4d72-b4c1-5ab9b4320e82
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[divisionAbbrev]
+		sourceColumn: standing[divisionAbbrev]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -69,7 +69,7 @@ table _remaining
 		lineageTag: be2c77c2-d555-4509-a7ae-2eefaa6530a1
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[divisionHomeSequence]
+		sourceColumn: standing[divisionHomeSequence]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -77,7 +77,7 @@ table _remaining
 		lineageTag: 3d9158cc-a246-48b8-a0c3-9b304562a450
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[divisionL10Sequence]
+		sourceColumn: standing[divisionL10Sequence]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -85,7 +85,7 @@ table _remaining
 		lineageTag: 1451be6d-2e4b-41bc-9d5b-ab9c94f49d94
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[divisionName]
+		sourceColumn: standing[divisionName]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -93,7 +93,7 @@ table _remaining
 		lineageTag: 32f4bee5-edb0-4681-b7a0-e22bcdd48814
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[divisionRoadSequence]
+		sourceColumn: standing[divisionRoadSequence]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -101,7 +101,7 @@ table _remaining
 		lineageTag: 22ba79a5-7878-44ec-a2a0-4d835981a677
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[divisionSequence]
+		sourceColumn: standing[divisionSequence]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -109,7 +109,7 @@ table _remaining
 		lineageTag: 106862d1-894a-4412-8e44-fd8cdceb2a42
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[gameTypeId]
+		sourceColumn: standing[gameTypeId]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -118,7 +118,7 @@ table _remaining
 		lineageTag: 925cef8f-5fa2-4206-9820-e991eecfab61
 		summarizeBy: sum
 		isNameInferred
-		sourceColumn: standing_now[gamesPlayed]
+		sourceColumn: standing[gamesPlayed]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -126,7 +126,7 @@ table _remaining
 		lineageTag: 642f9b67-0475-4afa-8d71-f0a2d038632b
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[goalDifferential]
+		sourceColumn: standing[goalDifferential]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -134,7 +134,7 @@ table _remaining
 		lineageTag: 232de571-b2f6-45ae-9fb3-f80fefb8d460
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[goalDifferentialPctg]
+		sourceColumn: standing[goalDifferentialPctg]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -142,7 +142,7 @@ table _remaining
 		lineageTag: 1c9ddaf0-f14e-4fe4-b03c-adac57b30c66
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[goalAgainst]
+		sourceColumn: standing[goalAgainst]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -150,7 +150,7 @@ table _remaining
 		lineageTag: b80e37c6-cc13-4b33-93a8-5df94deec375
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[goalFor]
+		sourceColumn: standing[goalFor]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -158,7 +158,7 @@ table _remaining
 		lineageTag: 0fdc8601-c71d-4697-8efc-1d409d648cde
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[goalsForPctg]
+		sourceColumn: standing[goalsForPctg]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -166,7 +166,7 @@ table _remaining
 		lineageTag: 056957bb-c509-439e-8539-dafbeed3c6ed
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[homeGamesPlayed]
+		sourceColumn: standing[homeGamesPlayed]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -174,7 +174,7 @@ table _remaining
 		lineageTag: 9faf1703-bd17-4fdd-b685-f1e2c9902fd1
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[homeGoalDifferential]
+		sourceColumn: standing[homeGoalDifferential]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -182,7 +182,7 @@ table _remaining
 		lineageTag: 11c46a92-bccf-46c6-843e-6e8315388b53
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[homeGoalsAgainst]
+		sourceColumn: standing[homeGoalsAgainst]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -190,7 +190,7 @@ table _remaining
 		lineageTag: c0269a4f-0225-4995-9b0f-68dcf3ad8447
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[homeGoalsFor]
+		sourceColumn: standing[homeGoalsFor]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -198,7 +198,7 @@ table _remaining
 		lineageTag: 0433d70d-3971-4445-b8cf-e98d347807fa
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[homeLosses]
+		sourceColumn: standing[homeLosses]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -206,7 +206,7 @@ table _remaining
 		lineageTag: 005f1e54-7c68-4f0f-903d-a2cc1142285b
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[homeOtLosses]
+		sourceColumn: standing[homeOtLosses]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -214,7 +214,7 @@ table _remaining
 		lineageTag: 13480b46-9b9c-4aab-a777-6c20fac7689e
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[homePoints]
+		sourceColumn: standing[homePoints]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -222,7 +222,7 @@ table _remaining
 		lineageTag: b7a3b0c1-e65a-4853-b061-d7fc46c26af4
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[homeRegulationPlusOtWins]
+		sourceColumn: standing[homeRegulationPlusOtWins]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -230,7 +230,7 @@ table _remaining
 		lineageTag: f272e5b3-2940-4931-9629-58e7cf063ba5
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[homeRegulationWins]
+		sourceColumn: standing[homeRegulationWins]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -238,7 +238,7 @@ table _remaining
 		lineageTag: 7abc96b6-371e-467b-8683-59dd43711a8a
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[homeTies]
+		sourceColumn: standing[homeTies]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -246,7 +246,7 @@ table _remaining
 		lineageTag: 43893883-fecd-4ffe-ac6c-d8a8dde1b6e1
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[homeWins]
+		sourceColumn: standing[homeWins]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -254,7 +254,7 @@ table _remaining
 		lineageTag: 32c88844-aa27-4372-b3a6-b681a537e5db
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[l10GamesPlayed]
+		sourceColumn: standing[l10GamesPlayed]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -262,7 +262,7 @@ table _remaining
 		lineageTag: 3b23649b-a1e8-4620-be67-cf4b70152e26
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[l10GoalDifferential]
+		sourceColumn: standing[l10GoalDifferential]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -270,7 +270,7 @@ table _remaining
 		lineageTag: 8194d5e8-f2ed-4ef2-9711-bed90f839f96
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[l10GoalsAgainst]
+		sourceColumn: standing[l10GoalsAgainst]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -278,7 +278,7 @@ table _remaining
 		lineageTag: 98cf7f57-dc49-423e-9a49-65102972e042
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[l10GoalsFor]
+		sourceColumn: standing[l10GoalsFor]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -286,7 +286,7 @@ table _remaining
 		lineageTag: c38315cd-32af-4fb8-93bd-5140df9610d6
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[l10Losses]
+		sourceColumn: standing[l10Losses]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -294,7 +294,7 @@ table _remaining
 		lineageTag: 38e41ea1-034b-4248-a499-aa3af24ae234
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[l10OtLosses]
+		sourceColumn: standing[l10OtLosses]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -302,7 +302,7 @@ table _remaining
 		lineageTag: 0940d598-3669-40e1-9cb1-c190b331a015
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[l10Points]
+		sourceColumn: standing[l10Points]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -310,7 +310,7 @@ table _remaining
 		lineageTag: fc712249-eccd-483b-9acb-667d53f699c7
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[l10RegulationPlusOtWins]
+		sourceColumn: standing[l10RegulationPlusOtWins]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -318,7 +318,7 @@ table _remaining
 		lineageTag: 73a88904-3a17-4262-baf8-bd6d1820955d
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[l10RegulationWins]
+		sourceColumn: standing[l10RegulationWins]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -326,7 +326,7 @@ table _remaining
 		lineageTag: 60749f5f-05f5-4140-ac7c-d2c3423ba8a0
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[l10Ties]
+		sourceColumn: standing[l10Ties]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -334,7 +334,7 @@ table _remaining
 		lineageTag: b3a6ca7d-624a-4cce-8701-27d749816fb0
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[l10Wins]
+		sourceColumn: standing[l10Wins]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -342,7 +342,7 @@ table _remaining
 		lineageTag: 0eba6fbb-b297-41a7-a859-5eab4c98cd0d
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[leagueHomeSequence]
+		sourceColumn: standing[leagueHomeSequence]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -350,7 +350,7 @@ table _remaining
 		lineageTag: 787f7ab9-97af-406b-b8da-c38ff3b44ceb
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[leagueL10Sequence]
+		sourceColumn: standing[leagueL10Sequence]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -358,7 +358,7 @@ table _remaining
 		lineageTag: 0c498e9f-219f-4f29-a01b-80760fc27aa9
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[leagueRoadSequence]
+		sourceColumn: standing[leagueRoadSequence]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -366,7 +366,7 @@ table _remaining
 		lineageTag: 1ba9c9f8-00c0-4cc8-a45f-46a0dc2e398c
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[leagueSequence]
+		sourceColumn: standing[leagueSequence]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -374,7 +374,7 @@ table _remaining
 		lineageTag: 91c29c93-4f03-4385-8776-00f19779cd62
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[losses]
+		sourceColumn: standing[losses]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -382,7 +382,7 @@ table _remaining
 		lineageTag: b50a619c-6a51-422b-b8bc-92670efb1a08
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[otLosses]
+		sourceColumn: standing[otLosses]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -390,7 +390,7 @@ table _remaining
 		lineageTag: 7eb057cb-9120-45a3-a24f-ff4df26f0f31
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[placeName]
+		sourceColumn: standing[placeName]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -398,7 +398,7 @@ table _remaining
 		lineageTag: e29bca7b-02ed-4241-8ef9-d930908aee66
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[pointPctg]
+		sourceColumn: standing[pointPctg]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -406,7 +406,7 @@ table _remaining
 		lineageTag: 74d5a7c1-156e-47ab-a62c-f9c2efa646db
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[points]
+		sourceColumn: standing[points]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -414,7 +414,7 @@ table _remaining
 		lineageTag: 3a3ec780-9617-465d-986a-384616328c96
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[regulationPlusOtWinPctg]
+		sourceColumn: standing[regulationPlusOtWinPctg]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -422,7 +422,7 @@ table _remaining
 		lineageTag: 07501c5e-248c-465c-bd18-03d75561ca01
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[regulationPlusOtWins]
+		sourceColumn: standing[regulationPlusOtWins]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -430,7 +430,7 @@ table _remaining
 		lineageTag: 65f3a4a8-f9d6-4ad1-b0a1-32ebff1c6d9d
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[regulationWinPctg]
+		sourceColumn: standing[regulationWinPctg]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -438,7 +438,7 @@ table _remaining
 		lineageTag: a4302a56-08c2-4c3e-a476-6bcf42e38ae8
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[regulationWins]
+		sourceColumn: standing[regulationWins]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -446,7 +446,7 @@ table _remaining
 		lineageTag: 828dfd3c-312d-4669-a6a5-3b95bd5cff01
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[roadGamesPlayed]
+		sourceColumn: standing[roadGamesPlayed]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -454,7 +454,7 @@ table _remaining
 		lineageTag: e6654072-e2c2-43e9-9622-9da370b80b36
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[roadGoalDifferential]
+		sourceColumn: standing[roadGoalDifferential]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -462,7 +462,7 @@ table _remaining
 		lineageTag: 4ed6d5bd-d5aa-4fc9-8349-0904c2b24dfb
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[roadGoalsAgainst]
+		sourceColumn: standing[roadGoalsAgainst]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -470,7 +470,7 @@ table _remaining
 		lineageTag: d24b1ffc-6492-4dd2-97fb-d09e665dede9
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[roadGoalsFor]
+		sourceColumn: standing[roadGoalsFor]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -478,7 +478,7 @@ table _remaining
 		lineageTag: deec7ac9-7659-449b-bf90-fd050b94c992
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[roadLosses]
+		sourceColumn: standing[roadLosses]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -486,7 +486,7 @@ table _remaining
 		lineageTag: 6eec59a2-18e1-4907-8b14-eb7f068fd644
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[roadOtLosses]
+		sourceColumn: standing[roadOtLosses]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -494,7 +494,7 @@ table _remaining
 		lineageTag: 82e69b04-5a06-4e48-9cf1-13dbf6450017
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[roadPoints]
+		sourceColumn: standing[roadPoints]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -502,7 +502,7 @@ table _remaining
 		lineageTag: 37139e92-8a0f-4737-8267-fab760322e42
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[roadRegulationPlusOtWins]
+		sourceColumn: standing[roadRegulationPlusOtWins]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -510,7 +510,7 @@ table _remaining
 		lineageTag: 2fe138db-972a-4cbc-9d80-6b588271c770
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[roadRegulationWins]
+		sourceColumn: standing[roadRegulationWins]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -518,7 +518,7 @@ table _remaining
 		lineageTag: 0fd440d7-74eb-411d-960e-de96775116f7
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[roadTies]
+		sourceColumn: standing[roadTies]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -526,7 +526,7 @@ table _remaining
 		lineageTag: 23fcb8b6-2232-42a5-8cd4-99c85290fdcc
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[roadWins]
+		sourceColumn: standing[roadWins]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -534,7 +534,7 @@ table _remaining
 		lineageTag: d00ae95a-9828-4102-9f71-ba441fa724fd
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[seasonId]
+		sourceColumn: standing[seasonId]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -542,7 +542,7 @@ table _remaining
 		lineageTag: 02aa8238-1ace-4794-9834-ffa9dc2bb28c
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[shootoutLosses]
+		sourceColumn: standing[shootoutLosses]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -550,7 +550,7 @@ table _remaining
 		lineageTag: c839077a-96fd-4766-901d-eada32c26c25
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[shootoutWins]
+		sourceColumn: standing[shootoutWins]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -558,7 +558,7 @@ table _remaining
 		lineageTag: 117ebeab-c223-4c13-be6b-9c3fc7e8a01b
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[streakCode]
+		sourceColumn: standing[streakCode]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -566,7 +566,7 @@ table _remaining
 		lineageTag: e51a3fda-729f-4f6e-9a12-1121f8837100
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[streakCount]
+		sourceColumn: standing[streakCount]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -574,7 +574,7 @@ table _remaining
 		lineageTag: c1d320f7-b28c-451e-a45f-91a893f0e538
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[teamName]
+		sourceColumn: standing[teamName]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -582,7 +582,7 @@ table _remaining
 		lineageTag: a8b17ba0-3237-47f9-a420-d51c0850e6fa
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[teamCommonName]
+		sourceColumn: standing[teamCommonName]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -590,7 +590,7 @@ table _remaining
 		lineageTag: f37524d2-97dd-496f-ab5a-536e8b627621
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[teamAbbrev]
+		sourceColumn: standing[teamAbbrev]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -599,7 +599,7 @@ table _remaining
 		dataCategory: ImageUrl
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[teamLogo]
+		sourceColumn: standing[teamLogo]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -607,7 +607,7 @@ table _remaining
 		lineageTag: 74ddedb8-acfb-4705-b0c2-6a6cbf95f0f7
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[ties]
+		sourceColumn: standing[ties]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -615,7 +615,7 @@ table _remaining
 		lineageTag: 3e7fa892-1f7f-438e-80ee-d46c35d9be4e
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[waiversSequence]
+		sourceColumn: standing[waiversSequence]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -623,7 +623,7 @@ table _remaining
 		lineageTag: 920e4c25-0e6c-4a80-a562-388c9fcb5f1b
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[wildcardSequence]
+		sourceColumn: standing[wildcardSequence]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -631,7 +631,7 @@ table _remaining
 		lineageTag: 8b1c9232-f663-40ed-8508-5e25db511dfa
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[winPctg]
+		sourceColumn: standing[winPctg]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -639,15 +639,15 @@ table _remaining
 		lineageTag: f2d788ad-e827-42bc-92fa-303b5e90a134
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[wins]
+		sourceColumn: standing[wins]
 
 		annotation SummarizationSetBy = Automatic
 
 	column teamDefaultName
-		lineageTag: 89cdfbd8-acf5-47f3-9573-7066d098d7a7
+		lineageTag: 6f3a0acf-9251-4e43-8936-47f40ab10fb2
 		summarizeBy: none
 		isNameInferred
-		sourceColumn: standing_now[teamDefaultName]
+		sourceColumn: standing[teamDefaultName]
 
 		annotation SummarizationSetBy = Automatic
 
@@ -657,24 +657,24 @@ table _remaining
 				
 				
 				// Eastern
-				var atlantic_qualifying = CALCULATE(MINX(TOPN(3,standing_now,[points],DESC),[points]),standing_now[divisionName] = "Atlantic")
+				var atlantic_qualifying = CALCULATE(MINX(TOPN(3,standing,[points],DESC),[points]),standing[divisionName] = "Atlantic")
 				
-				var atlantic_remaining = CALCULATETABLE(standing_now,standing_now[divisionName]="Atlantic",standing_now[points] < atlantic_qualifying)
+				var atlantic_remaining = CALCULATETABLE(standing,standing[divisionName]="Atlantic",standing[points] < atlantic_qualifying)
 				
 				
-				var central_qualifying = CALCULATE(MINX(TOPN(3,standing_now,[points],DESC),[points]),standing_now[divisionName] = "Central")
+				var central_qualifying = CALCULATE(MINX(TOPN(3,standing,[points],DESC),[points]),standing[divisionName] = "Central")
 				
-				var central_remaining = CALCULATETABLE(standing_now,standing_now[divisionName]="Central",standing_now[points] < central_qualifying)
+				var central_remaining = CALCULATETABLE(standing,standing[divisionName]="Central",standing[points] < central_qualifying)
 				
 				// Western
-				var metropolitan_qualifying = CALCULATE(MINX(TOPN(3,standing_now,[points],DESC),[points]),standing_now[divisionName] = "Metropolitan")
+				var metropolitan_qualifying = CALCULATE(MINX(TOPN(3,standing,[points],DESC),[points]),standing[divisionName] = "Metropolitan")
 				
-				var metropolitan_remaining = CALCULATETABLE(standing_now,standing_now[divisionName]="Metropolitan",standing_now[points] < metropolitan_qualifying)
+				var metropolitan_remaining = CALCULATETABLE(standing,standing[divisionName]="Metropolitan",standing[points] < metropolitan_qualifying)
 				
 				
-				var pacific_qualifying = CALCULATE(MINX(TOPN(3,standing_now,[points],DESC),[points]),standing_now[divisionName] = "Pacific")
+				var pacific_qualifying = CALCULATE(MINX(TOPN(3,standing,[points],DESC),[points]),standing[divisionName] = "Pacific")
 				
-				var pacific_remaining = CALCULATETABLE(standing_now,standing_now[divisionName]="Pacific",standing_now[points] < pacific_qualifying)
+				var pacific_remaining = CALCULATETABLE(standing,standing[divisionName]="Pacific",standing[points] < pacific_qualifying)
 				
 				
 				return UNION(atlantic_remaining,central_remaining,metropolitan_remaining,pacific_remaining)
