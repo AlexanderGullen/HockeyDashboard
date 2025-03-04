@@ -2,32 +2,42 @@ table game
 	lineageTag: f33b89d3-958d-42fb-adda-a6ef6a703d84
 
 	column date
-		dataType: dateTime
-		formatString: General Date
+		dataType: string
 		lineageTag: ee42e28f-f798-4f1d-b1ef-5f4ca3096522
 		summarizeBy: none
 		sourceColumn: date
 
-		variation Variation
-			isDefault
-			relationship: 47d2c3fc-14cc-40dc-bc56-139656e3ca46
-			defaultHierarchy: LocalDateTable_c25819b7-b5ce-4211-ae85-22f1e2728760.'Date Hierarchy'
+		annotation SummarizationSetBy = Automatic
+
+	column dayAbbrev
+		dataType: string
+		lineageTag: 25a58bc7-7066-422e-bf60-325ddd3a6c67
+		summarizeBy: none
+		sourceColumn: dayAbbrev
 
 		annotation SummarizationSetBy = Automatic
 
-	column label
+	column numberOfGames
 		dataType: string
-		lineageTag: ad3f87b6-8f3f-48d6-aa75-e8e8c341fd4b
+		lineageTag: 69c7821d-601b-4c03-858b-3c4c9b7c6cf7
 		summarizeBy: none
-		sourceColumn: label
+		sourceColumn: numberOfGames
 
 		annotation SummarizationSetBy = Automatic
 
-	column source
+	column datePromo
 		dataType: string
-		lineageTag: 00f9e7d6-8968-49ad-8a84-b8f80572202c
+		lineageTag: 308da87f-17dc-4db1-9a21-312f75a02474
 		summarizeBy: none
-		sourceColumn: source
+		sourceColumn: datePromo
+
+		annotation SummarizationSetBy = Automatic
+
+	column games
+		dataType: string
+		lineageTag: c6dcf3c0-0be1-4c4b-b7f4-69b86351a188
+		summarizeBy: none
+		sourceColumn: games
 
 		annotation SummarizationSetBy = Automatic
 
@@ -38,15 +48,10 @@ table game
 				    headers = [#"Content-type" = "application/json"],
 				    result = Web.Contents("https://api-web.nhle.com/v1/schedule/2025-03-01",[Headers = headers]), //TODO: abstract the date to a parameter
 				    json = Json.Document(result),
+				    game_week = Table.FromRecords(json[gameWeek]),
+				    game_week_with_game = Table.ExpandListColumn(game_week,"games"),
 				
-				    output = #table(type table [date = datetime, label = text, source = text],{
-				        {DateTime.LocalNow(), "Today","custom"},
-				        {DateTime.FromText(json[nextStartDate]),"Next Game","api"},
-				        {DateTime.FromText(json[preSeasonStartDate]),"Pre Season Start","api"},
-				        {DateTime.FromText(json[regularSeasonStartDate]),"Regular Season Start","api"},
-				        {DateTime.FromText(json[regularSeasonEndDate]),"Playoff Start Date","api"},
-				        {DateTime.FromText(json[playoffEndDate]),"Playoff End Date","api"}
-				    })
+				    output = game_week_with_game
 				in
 				    output
 

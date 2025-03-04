@@ -26,7 +26,6 @@ ref table _remaining
 ref table DateTableTemplate_6700b283-b79a-4711-8db8-e5d7fcc9ba15
 ref table LocalDateTable_da6c6320-46f7-49b0-bc32-0dc0710df7d2
 ref table game
-ref table LocalDateTable_c25819b7-b5ce-4211-ae85-22f1e2728760
 
 ref cultureInfo en-CA
 

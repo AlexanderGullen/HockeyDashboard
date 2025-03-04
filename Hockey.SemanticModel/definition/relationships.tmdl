@@ -15,8 +15,3 @@ relationship 4642a497-67fa-428a-b235-5cecedc100fe
 	fromColumn: schedule.date
 	toColumn: LocalDateTable_da6c6320-46f7-49b0-bc32-0dc0710df7d2.Date
 
-relationship 47d2c3fc-14cc-40dc-bc56-139656e3ca46
-	joinOnDateBehavior: datePartOnly
-	fromColumn: game.date
-	toColumn: LocalDateTable_c25819b7-b5ce-4211-ae85-22f1e2728760.Date
-
