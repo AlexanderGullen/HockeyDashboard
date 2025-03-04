@@ -214,6 +214,15 @@
           "x": 0.00,
           "y": 560.00,
           "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"d525f0b0a23af9a779e2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":60,\"z\":1000,\"width\":1279.7014925373135,\"height\":480,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"game.id\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"g\",\"Entity\":\"game\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"id\"},\"Name\":\"game.id\",\"NativeReferenceName\":\"id\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 480.00,
+          "width": 1279.70,
+          "x": 0.00,
+          "y": 60.00,
+          "z": 1000.00
         }
       ],
       "width": 1280.00
