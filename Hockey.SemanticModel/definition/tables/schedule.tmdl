@@ -8,11 +8,6 @@ table schedule
 		summarizeBy: none
 		sourceColumn: date
 
-		variation Variation
-			isDefault
-			relationship: 4642a497-67fa-428a-b235-5cecedc100fe
-			defaultHierarchy: LocalDateTable_da6c6320-46f7-49b0-bc32-0dc0710df7d2.'Date Hierarchy'
-
 		annotation SummarizationSetBy = Automatic
 
 	column label

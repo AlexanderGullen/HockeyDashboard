@@ -21,8 +21,9 @@ ref table standing
 ref table Points
 ref table _remaining
 ref table DateTableTemplate_6700b283-b79a-4711-8db8-e5d7fcc9ba15
-ref table LocalDateTable_da6c6320-46f7-49b0-bc32-0dc0710df7d2
 ref table game
+ref table _date_table
+ref table LocalDateTable_efecd598-0ae6-42a5-a11c-77c7e0ce192f
 
 ref cultureInfo en-CA
 

@@ -209,43 +209,67 @@ table game
 
 		annotation SummarizationSetBy = Automatic
 
-	column homeAbbrev
-		dataType: string
-		lineageTag: 4edd863f-e1a6-49f1-8648-0358258f0e3c
+	column _game_date = DATE(LEFT(game[gameDate],4),MID(game[gameDate],5,2),RIGHT(game[gameDate],2))
+		formatString: General Date
+		lineageTag: 377612fd-4b57-4d86-a978-15362c851ab9
 		summarizeBy: none
-		sourceColumn: homeAbbrev
 
 		annotation SummarizationSetBy = Automatic
 
-	column awayAbbrev
+	column team
 		dataType: string
-		lineageTag: f7993c4e-a4c6-470c-922a-32f0e03defab
+		lineageTag: 65056dcf-13f4-4794-8ccf-9f032682d5da
 		summarizeBy: none
-		sourceColumn: awayAbbrev
+		sourceColumn: team
+
+		annotation SummarizationSetBy = Automatic
+
+	column teamAbbrev
+		dataType: string
+		lineageTag: fbabbe6e-5daf-41fe-aeae-20cb8ee0a917
+		summarizeBy: none
+		sourceColumn: teamAbbrev
+
+		annotation SummarizationSetBy = Automatic
+
+	column teamLocation
+		dataType: string
+		lineageTag: 7a1ce33f-1724-4142-9763-8426f00ce3f2
+		summarizeBy: none
+		sourceColumn: teamLocation
 
 		annotation SummarizationSetBy = Automatic
 
 	partition game = m
 		mode: import
-		source =
+		source = ```
 				let
 				    A = _fetch_play_by_play("2024020978"),
 				    headers = [#"Content-type" = "application/json"],
 				    result = Web.Contents("https://api-web.nhle.com/v1/schedule/2025-03-01",[Headers = headers]), //TODO: abstract the date to a parameter
-				    json = Json.Document(result),
-				    game_week = Table.FromRecords(json[gameWeek]),
+				    game_week = Table.FromRecords(Json.Document(result)[gameWeek]),
+				    
 				    game_week_with_game = Table.ExpandListColumn(game_week,"games"),
 				    game_week_with_game_id = Table.AddColumn(game_week_with_game,"game_id", each Text.From(_[games][id])),
 				    game_week_with_game_play_by_play = Table.AddColumn(game_week_with_game_id,"game", each _fetch_play_by_play(_[game_id])),
 				    game = Table.FromRecords(Table.Column(game_week_with_game_play_by_play,"game")),
-				    game_home = Table.AddColumn(game,"homeAbbrev", each [homeTeam][abbrev]),
-				    game_away = Table.AddColumn(game_home,"awayAbbrev", each [awayTeam][abbrev]),
 				
-				    output = game_away
+				
+				    game_team = Table.AddColumn(game,"team",each {
+				    [teamAbbrev=[homeTeam][abbrev],teamLocation="home"],
+				    [teamAbbrev=[awayTeam][abbrev],teamLocation="away"]
+				    }),
+				
+				    game_team_location = Table.AddColumn(Table.ExpandListColumn(game_team,"team"),"teamLocation",each [team][teamLocation]),
+				    game_team_abbrev = Table.AddColumn(game_team_location,"teamAbbrev",each [team][teamAbbrev]),
+				
+				
+				    output = game_team_abbrev
 				in
 				    output
+				```
 
 	annotation PBI_NavigationStepName = Navigation
 
-	annotation PBI_ResultType = Text
+	annotation PBI_ResultType = Table
 

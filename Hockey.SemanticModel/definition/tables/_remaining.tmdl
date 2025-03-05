@@ -651,6 +651,14 @@ table _remaining
 
 		annotation SummarizationSetBy = Automatic
 
+	column teamAbbrevString
+		lineageTag: 81f5ae30-f018-43b3-9960-03a75fbea369
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: standing[teamAbbrevString]
+
+		annotation SummarizationSetBy = Automatic
+
 	partition _remaining = calculated
 		mode: import
 		source =

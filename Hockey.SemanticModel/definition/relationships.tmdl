@@ -1,5 +1,19 @@
-relationship 4642a497-67fa-428a-b235-5cecedc100fe
+relationship a9af422c-c357-4a17-81af-fbe07d92cd6f
 	joinOnDateBehavior: datePartOnly
+	fromColumn: _date_table.Date
+	toColumn: LocalDateTable_efecd598-0ae6-42a5-a11c-77c7e0ce192f.Date
+
+relationship 7fa7bd4d-7ed7-6450-e9ea-b9c1c87dd73a
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
 	fromColumn: schedule.date
-	toColumn: LocalDateTable_da6c6320-46f7-49b0-bc32-0dc0710df7d2.Date
+	toColumn: _date_table.Date
+
+relationship bb03527c-95fa-b31c-9198-e8d36e66a738
+	fromColumn: game._game_date
+	toColumn: _date_table.Date
+
+relationship d58c927a-461c-4da2-e989-c4bf3089f2c0
+	fromColumn: game.teamAbbrev
+	toColumn: standing.teamAbbrevString
 
