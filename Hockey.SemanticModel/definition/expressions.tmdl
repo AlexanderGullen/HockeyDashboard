@@ -24,7 +24,7 @@ expression _fetch_play_by_play =
 
 	annotation PBI_ResultType = Function
 
-expression _api_delay_in_seconds = 0.8 meta [IsParameterQuery=true, Type="Number", IsParameterQueryRequired=true]
+expression _api_delay_in_seconds = 1.2 meta [IsParameterQuery=true, Type="Number", IsParameterQueryRequired=true]
 	lineageTag: 7f73310b-9383-4154-852f-ca6f27a8a663
 
 	annotation PBI_NavigationStepName = Navigation

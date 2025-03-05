@@ -1,12 +1,23 @@
 table schedule
 	lineageTag: 538354af-fa1d-4fad-b42a-c248622966e0
 
+	measure _today = TODAY()
+		formatString: General Date
+		lineageTag: 244e13d7-2693-4168-add5-1e9a2b57e218
+
 	column date
 		dataType: dateTime
 		formatString: General Date
 		lineageTag: 17632fb9-880e-4dce-8ef8-d5b2f11c8903
 		summarizeBy: none
 		sourceColumn: date
+
+		variation Variation
+			isDefault
+			relationship: b9939a9f-704c-4b64-b46a-2f08c7bf52f8
+			defaultHierarchy: LocalDateTable_e2773b2c-c05d-4d2e-a442-4f72ba67cc55.'Date Hierarchy'
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -16,6 +27,8 @@ table schedule
 		summarizeBy: none
 		sourceColumn: label
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column source
@@ -23,6 +36,8 @@ table schedule
 		lineageTag: 47ec36a2-15dc-41ca-b963-8a1b204c3e66
 		summarizeBy: none
 		sourceColumn: source
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -36,7 +51,6 @@ table schedule
 				
 				    output = #table(type table [date = datetime, label = text, source = text],{
 				        {DateTime.LocalNow(), "Today","custom"},
-				        {DateTime.FromText(json[nextStartDate]),"Next Game","api"},
 				        {DateTime.FromText(json[preSeasonStartDate]),"Pre Season Start","api"},
 				        {DateTime.FromText(json[regularSeasonStartDate]),"Regular Season Start","api"},
 				        {DateTime.FromText(json[regularSeasonEndDate]),"Playoff Start Date","api"},

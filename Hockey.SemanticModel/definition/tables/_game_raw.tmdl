@@ -1,4 +1,4 @@
-table game
+table _game_raw
 	lineageTag: a42e2282-7b4d-4296-8388-9d129bca2947
 
 	column id
@@ -6,6 +6,8 @@ table game
 		lineageTag: 05b09d85-4d4d-4815-8065-c994bd0ab9d3
 		summarizeBy: none
 		sourceColumn: id
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -15,6 +17,8 @@ table game
 		summarizeBy: none
 		sourceColumn: season
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column gameType
@@ -22,6 +26,8 @@ table game
 		lineageTag: 6676c345-3ddf-4bc7-9883-e64489329229
 		summarizeBy: none
 		sourceColumn: gameType
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -31,6 +37,8 @@ table game
 		summarizeBy: none
 		sourceColumn: limitedScoring
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column gameDate
@@ -38,6 +46,8 @@ table game
 		lineageTag: 6117ba95-dfe4-4bf0-b410-cdc80bb5e06e
 		summarizeBy: none
 		sourceColumn: gameDate
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -47,6 +57,8 @@ table game
 		summarizeBy: none
 		sourceColumn: venue
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column venueLocation
@@ -54,6 +66,8 @@ table game
 		lineageTag: 9736bcf6-44db-419c-8e9b-dece82b53278
 		summarizeBy: none
 		sourceColumn: venueLocation
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -63,6 +77,8 @@ table game
 		summarizeBy: none
 		sourceColumn: startTimeUTC
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column easternUTCOffset
@@ -70,6 +86,8 @@ table game
 		lineageTag: e07af2d8-218e-41d3-9774-bf594c7b5582
 		summarizeBy: none
 		sourceColumn: easternUTCOffset
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -79,6 +97,8 @@ table game
 		summarizeBy: none
 		sourceColumn: venueUTCOffset
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column tvBroadcasts
@@ -86,6 +106,8 @@ table game
 		lineageTag: 52d10ae4-034a-477b-85ce-ddf96b9afe2e
 		summarizeBy: none
 		sourceColumn: tvBroadcasts
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -95,6 +117,8 @@ table game
 		summarizeBy: none
 		sourceColumn: gameState
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column gameScheduleState
@@ -102,6 +126,8 @@ table game
 		lineageTag: 1a8848f0-ac44-4c6d-bfba-f17705dd7592
 		summarizeBy: none
 		sourceColumn: gameScheduleState
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -111,6 +137,8 @@ table game
 		summarizeBy: none
 		sourceColumn: periodDescriptor
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column awayTeam
@@ -118,6 +146,8 @@ table game
 		lineageTag: 8f11acf2-8626-4150-8201-b42cd67d2a20
 		summarizeBy: none
 		sourceColumn: awayTeam
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -127,6 +157,8 @@ table game
 		summarizeBy: none
 		sourceColumn: homeTeam
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column shootoutInUse
@@ -134,6 +166,8 @@ table game
 		lineageTag: 89352b07-c2b2-409e-8c2a-9a84a81095ec
 		summarizeBy: none
 		sourceColumn: shootoutInUse
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -143,6 +177,8 @@ table game
 		summarizeBy: none
 		sourceColumn: otInUse
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column clock
@@ -150,6 +186,8 @@ table game
 		lineageTag: 33c868e8-aae7-483d-8243-7e81e6751cf2
 		summarizeBy: none
 		sourceColumn: clock
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -159,6 +197,8 @@ table game
 		summarizeBy: none
 		sourceColumn: displayPeriod
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column maxPeriods
@@ -166,6 +206,8 @@ table game
 		lineageTag: 095fdb23-7285-4fe2-a8d0-2a5e92f00719
 		summarizeBy: none
 		sourceColumn: maxPeriods
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -175,6 +217,8 @@ table game
 		summarizeBy: none
 		sourceColumn: gameOutcome
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column plays
@@ -182,6 +226,8 @@ table game
 		lineageTag: 5daa96b7-271d-40e5-a759-01263e6706b7
 		summarizeBy: none
 		sourceColumn: plays
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -191,6 +237,8 @@ table game
 		summarizeBy: none
 		sourceColumn: rosterSpots
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column regPeriods
@@ -198,6 +246,8 @@ table game
 		lineageTag: 377e326c-20a7-411c-a1b2-809ade9f83a9
 		summarizeBy: none
 		sourceColumn: regPeriods
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -207,44 +257,28 @@ table game
 		summarizeBy: none
 		sourceColumn: summary
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
-	column _game_date = DATE(LEFT(game[gameDate],4),MID(game[gameDate],5,2),RIGHT(game[gameDate],2))
+	column _game_date = DATE(LEFT(_game_raw[gameDate],4),MID(_game_raw[gameDate],5,2),RIGHT(_game_raw[gameDate],2))
 		formatString: General Date
 		lineageTag: 377612fd-4b57-4d86-a978-15362c851ab9
 		summarizeBy: none
 
-		annotation SummarizationSetBy = Automatic
+		variation Variation
+			isDefault
+			relationship: aded7492-befb-4f3c-b91d-72383fb8c7a9
+			defaultHierarchy: LocalDateTable_91039ee1-6f49-47e0-a84d-ce6950d7642b.'Date Hierarchy'
 
-	column team
-		dataType: string
-		lineageTag: 65056dcf-13f4-4794-8ccf-9f032682d5da
-		summarizeBy: none
-		sourceColumn: team
-
-		annotation SummarizationSetBy = Automatic
-
-	column teamAbbrev
-		dataType: string
-		lineageTag: fbabbe6e-5daf-41fe-aeae-20cb8ee0a917
-		summarizeBy: none
-		sourceColumn: teamAbbrev
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
-	column teamLocation
-		dataType: string
-		lineageTag: 7a1ce33f-1724-4142-9763-8426f00ce3f2
-		summarizeBy: none
-		sourceColumn: teamLocation
-
-		annotation SummarizationSetBy = Automatic
-
-	partition game = m
+	partition _game_raw = m
 		mode: import
 		source = ```
 				let
-				    A = _fetch_play_by_play("2024020978"),
 				    headers = [#"Content-type" = "application/json"],
 				    result = Web.Contents("https://api-web.nhle.com/v1/schedule/2025-03-01",[Headers = headers]), //TODO: abstract the date to a parameter
 				    game_week = Table.FromRecords(Json.Document(result)[gameWeek]),
@@ -255,19 +289,12 @@ table game
 				    game = Table.FromRecords(Table.Column(game_week_with_game_play_by_play,"game")),
 				
 				
-				    game_team = Table.AddColumn(game,"team",each {
-				    [teamAbbrev=[homeTeam][abbrev],teamLocation="home"],
-				    [teamAbbrev=[awayTeam][abbrev],teamLocation="away"]
-				    }),
-				
-				    game_team_location = Table.AddColumn(Table.ExpandListColumn(game_team,"team"),"teamLocation",each [team][teamLocation]),
-				    game_team_abbrev = Table.AddColumn(game_team_location,"teamAbbrev",each [team][teamAbbrev]),
-				
-				
-				    output = game_team_abbrev
+				    output = game
 				in
 				    output
 				```
+
+	changedProperty = IsHidden
 
 	annotation PBI_NavigationStepName = Navigation
 

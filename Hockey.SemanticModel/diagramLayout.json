@@ -4,7 +4,7 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 209,
+        "x": 0,
         "y": 0
       },
       "nodes": [
@@ -61,8 +61,8 @@
         },
         {
           "location": {
-            "x": 284.599853515625,
-            "y": 308.7734375
+            "x": 0,
+            "y": 517.43888085251547
           },
           "nodeIndex": "_remaining",
           "nodeLineageTag": "ed0cc5ff-90a1-45f0-8cf6-a4767c36d73c",
@@ -74,8 +74,8 @@
         },
         {
           "location": {
-            "x": 1230,
-            "y": 116
+            "x": 1294.5940164112844,
+            "y": 448.6501823559841
           },
           "nodeIndex": "standing",
           "nodeLineageTag": "87320abf-968b-4f2a-b2a7-ce88313e0368",
@@ -87,10 +87,23 @@
         },
         {
           "location": {
-            "x": 875.400146484375,
-            "y": 183.1953125
+            "x": 1167,
+            "y": 0
           },
-          "nodeIndex": "game",
+          "nodeIndex": "play",
+          "nodeLineageTag": "c0b3fd3b-8b7e-456a-a68b-7707eba56c9d",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 279.400146484375,
+            "y": 564.1953125
+          },
+          "nodeIndex": "_game_raw",
           "nodeLineageTag": "a42e2282-7b4d-4296-8388-9d129bca2947",
           "size": {
             "height": 300,
@@ -100,11 +113,24 @@
         },
         {
           "location": {
-            "x": 564,
-            "y": 500.59765625
+            "x": 873.57875541475346,
+            "y": 258.09707089286786
+          },
+          "nodeIndex": "team",
+          "nodeLineageTag": "16c0610b-d6ae-41f3-834d-c33e40aa5414",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 479.61538637098226,
+            "y": 344.50363983871534
           },
           "nodeIndex": "_date_table",
-          "nodeLineageTag": "8b928295-f4b5-45b8-aea2-893091c1c79c",
+          "nodeLineageTag": "06a6ac48-9c1a-4239-86f3-89fd5c0a31b4",
           "size": {
             "height": 200,
             "width": 234
@@ -113,7 +139,7 @@
         }
       ],
       "name": "All tables",
-      "zoomValue": 100,
+      "zoomValue": 79.553182037699813,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,

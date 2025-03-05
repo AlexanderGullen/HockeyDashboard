@@ -6,7 +6,7 @@ model Model
 		legacyRedirects
 		returnErrorValuesAsNull
 
-annotation PBI_QueryOrder = ["spotlight","schedule","player_landing","standing","Points","_fetch_play_by_play","_api_delay_in_seconds","game"]
+annotation PBI_QueryOrder = ["spotlight","schedule","player_landing","standing","Points","_fetch_play_by_play","_api_delay_in_seconds","_game_raw","play","team"]
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
@@ -20,10 +20,13 @@ ref table player_landing
 ref table standing
 ref table Points
 ref table _remaining
-ref table DateTableTemplate_6700b283-b79a-4711-8db8-e5d7fcc9ba15
-ref table game
+ref table _game_raw
+ref table play
+ref table team
+ref table DateTableTemplate_f47746b8-77d7-4b89-b074-11fcce8e2ea7
+ref table LocalDateTable_e2773b2c-c05d-4d2e-a442-4f72ba67cc55
 ref table _date_table
-ref table LocalDateTable_efecd598-0ae6-42a5-a11c-77c7e0ce192f
+ref table LocalDateTable_91039ee1-6f49-47e0-a84d-ce6950d7642b
 
 ref cultureInfo en-CA
 

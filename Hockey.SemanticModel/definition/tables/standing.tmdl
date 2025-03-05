@@ -8,6 +8,8 @@ table standing
 		summarizeBy: none
 		sourceColumn: conferenceAbbrev
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column conferenceHomeSequence
@@ -15,6 +17,8 @@ table standing
 		lineageTag: d2781cf1-8db3-4cf8-b84b-879d791cd23d
 		summarizeBy: none
 		sourceColumn: conferenceHomeSequence
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -24,6 +28,8 @@ table standing
 		summarizeBy: none
 		sourceColumn: conferenceL10Sequence
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column conferenceName
@@ -31,6 +37,8 @@ table standing
 		lineageTag: 2f9c2d51-9b74-42f5-937f-ce170504c464
 		summarizeBy: none
 		sourceColumn: conferenceName
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -40,6 +48,8 @@ table standing
 		summarizeBy: none
 		sourceColumn: conferenceRoadSequence
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column conferenceSequence
@@ -47,6 +57,8 @@ table standing
 		lineageTag: 378dc2ba-3c59-471f-849c-f37ad7668eb6
 		summarizeBy: none
 		sourceColumn: conferenceSequence
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -56,6 +68,8 @@ table standing
 		summarizeBy: none
 		sourceColumn: date
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column divisionAbbrev
@@ -63,6 +77,8 @@ table standing
 		lineageTag: 14b723b1-d94c-4a29-95d3-3d5516e2a345
 		summarizeBy: none
 		sourceColumn: divisionAbbrev
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -72,6 +88,8 @@ table standing
 		summarizeBy: none
 		sourceColumn: divisionHomeSequence
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column divisionL10Sequence
@@ -79,6 +97,8 @@ table standing
 		lineageTag: 5f3e32f2-cf86-468a-84e3-fa6a4fe742bd
 		summarizeBy: none
 		sourceColumn: divisionL10Sequence
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -88,6 +108,8 @@ table standing
 		summarizeBy: none
 		sourceColumn: divisionName
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column divisionRoadSequence
@@ -95,6 +117,8 @@ table standing
 		lineageTag: f0e68bcb-7885-4a25-8544-bf60111bec98
 		summarizeBy: none
 		sourceColumn: divisionRoadSequence
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -104,6 +128,8 @@ table standing
 		summarizeBy: none
 		sourceColumn: divisionSequence
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column gameTypeId
@@ -111,6 +137,8 @@ table standing
 		lineageTag: fd193d85-04d4-46d1-b909-f33358b08224
 		summarizeBy: none
 		sourceColumn: gameTypeId
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -123,6 +151,8 @@ table standing
 
 		changedProperty = DataType
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column goalDifferential
@@ -130,6 +160,8 @@ table standing
 		lineageTag: 5165c77f-1b23-4a45-b2c2-f84aa44f0b72
 		summarizeBy: none
 		sourceColumn: goalDifferential
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -139,6 +171,8 @@ table standing
 		summarizeBy: none
 		sourceColumn: goalDifferentialPctg
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column goalAgainst
@@ -146,6 +180,8 @@ table standing
 		lineageTag: a5a5634a-9b3f-4e3e-80f2-14e585ac7e55
 		summarizeBy: none
 		sourceColumn: goalAgainst
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -155,6 +191,8 @@ table standing
 		summarizeBy: none
 		sourceColumn: goalFor
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column goalsForPctg
@@ -162,6 +200,8 @@ table standing
 		lineageTag: 250ab25b-61df-4bdc-b15e-18668ec4fede
 		summarizeBy: none
 		sourceColumn: goalsForPctg
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -171,6 +211,8 @@ table standing
 		summarizeBy: none
 		sourceColumn: homeGamesPlayed
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column homeGoalDifferential
@@ -178,6 +220,8 @@ table standing
 		lineageTag: f7db61ed-bf1f-4170-84fd-6d2fcb526c9b
 		summarizeBy: none
 		sourceColumn: homeGoalDifferential
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -187,6 +231,8 @@ table standing
 		summarizeBy: none
 		sourceColumn: homeGoalsAgainst
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column homeGoalsFor
@@ -194,6 +240,8 @@ table standing
 		lineageTag: fd20eed2-d591-40fa-8e2d-6686ba70eb53
 		summarizeBy: none
 		sourceColumn: homeGoalsFor
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -203,6 +251,8 @@ table standing
 		summarizeBy: none
 		sourceColumn: homeLosses
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column homeOtLosses
@@ -210,6 +260,8 @@ table standing
 		lineageTag: 5c73c88e-7086-4c39-b4c2-719937a18cfd
 		summarizeBy: none
 		sourceColumn: homeOtLosses
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -219,6 +271,8 @@ table standing
 		summarizeBy: none
 		sourceColumn: homePoints
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column homeRegulationPlusOtWins
@@ -226,6 +280,8 @@ table standing
 		lineageTag: 2df4b932-9423-4430-ac7a-de01c65d47fc
 		summarizeBy: none
 		sourceColumn: homeRegulationPlusOtWins
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -235,6 +291,8 @@ table standing
 		summarizeBy: none
 		sourceColumn: homeRegulationWins
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column homeTies
@@ -242,6 +300,8 @@ table standing
 		lineageTag: efe9438c-5b19-4280-b90a-5da6bbc3e2a1
 		summarizeBy: none
 		sourceColumn: homeTies
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -251,6 +311,8 @@ table standing
 		summarizeBy: none
 		sourceColumn: homeWins
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column l10GamesPlayed
@@ -258,6 +320,8 @@ table standing
 		lineageTag: 9dcfc055-6ac9-4021-8376-a313f9898849
 		summarizeBy: none
 		sourceColumn: l10GamesPlayed
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -267,6 +331,8 @@ table standing
 		summarizeBy: none
 		sourceColumn: l10GoalDifferential
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column l10GoalsAgainst
@@ -274,6 +340,8 @@ table standing
 		lineageTag: 3742541e-737a-40bb-ab4f-490c76e95adc
 		summarizeBy: none
 		sourceColumn: l10GoalsAgainst
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -283,6 +351,8 @@ table standing
 		summarizeBy: none
 		sourceColumn: l10GoalsFor
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column l10Losses
@@ -290,6 +360,8 @@ table standing
 		lineageTag: 294d68ff-c3cd-4139-934e-539119ff88fa
 		summarizeBy: none
 		sourceColumn: l10Losses
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -299,6 +371,8 @@ table standing
 		summarizeBy: none
 		sourceColumn: l10OtLosses
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column l10Points
@@ -306,6 +380,8 @@ table standing
 		lineageTag: e42e855a-19e7-405b-a3e0-0b75f7fe9d11
 		summarizeBy: none
 		sourceColumn: l10Points
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -315,6 +391,8 @@ table standing
 		summarizeBy: none
 		sourceColumn: l10RegulationPlusOtWins
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column l10RegulationWins
@@ -322,6 +400,8 @@ table standing
 		lineageTag: addb012b-acf0-4973-bd75-e90e125505c8
 		summarizeBy: none
 		sourceColumn: l10RegulationWins
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -331,6 +411,8 @@ table standing
 		summarizeBy: none
 		sourceColumn: l10Ties
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column l10Wins
@@ -338,6 +420,8 @@ table standing
 		lineageTag: 6cebb616-5ec1-4d78-9308-9652080074a1
 		summarizeBy: none
 		sourceColumn: l10Wins
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -347,6 +431,8 @@ table standing
 		summarizeBy: none
 		sourceColumn: leagueHomeSequence
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column leagueL10Sequence
@@ -354,6 +440,8 @@ table standing
 		lineageTag: b833ab15-f6f7-49cd-b020-28b772e3f2e0
 		summarizeBy: none
 		sourceColumn: leagueL10Sequence
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -363,6 +451,8 @@ table standing
 		summarizeBy: none
 		sourceColumn: leagueRoadSequence
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column leagueSequence
@@ -370,6 +460,8 @@ table standing
 		lineageTag: 466ef6d2-790f-43cd-b6e9-a7541f065b93
 		summarizeBy: none
 		sourceColumn: leagueSequence
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -379,6 +471,8 @@ table standing
 		summarizeBy: none
 		sourceColumn: losses
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column otLosses
@@ -386,6 +480,8 @@ table standing
 		lineageTag: e4cdef9e-0203-45b0-9e96-3c234e3537ff
 		summarizeBy: none
 		sourceColumn: otLosses
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -395,6 +491,8 @@ table standing
 		summarizeBy: none
 		sourceColumn: placeName
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column pointPctg
@@ -402,6 +500,8 @@ table standing
 		lineageTag: 5e12a682-c37c-4531-b413-7444ba808647
 		summarizeBy: none
 		sourceColumn: pointPctg
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -411,6 +511,8 @@ table standing
 		summarizeBy: none
 		sourceColumn: points
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column regulationPlusOtWinPctg
@@ -418,6 +520,8 @@ table standing
 		lineageTag: 986a369e-2ecf-4e1a-b219-e4d4dad9888f
 		summarizeBy: none
 		sourceColumn: regulationPlusOtWinPctg
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -427,6 +531,8 @@ table standing
 		summarizeBy: none
 		sourceColumn: regulationPlusOtWins
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column regulationWinPctg
@@ -434,6 +540,8 @@ table standing
 		lineageTag: 2e5c0c12-114f-47e7-9e6f-fa326493290c
 		summarizeBy: none
 		sourceColumn: regulationWinPctg
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -443,6 +551,8 @@ table standing
 		summarizeBy: none
 		sourceColumn: regulationWins
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column roadGamesPlayed
@@ -450,6 +560,8 @@ table standing
 		lineageTag: 78212397-8919-4117-a3b4-1a2a0903734c
 		summarizeBy: none
 		sourceColumn: roadGamesPlayed
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -459,6 +571,8 @@ table standing
 		summarizeBy: none
 		sourceColumn: roadGoalDifferential
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column roadGoalsAgainst
@@ -466,6 +580,8 @@ table standing
 		lineageTag: 0ad0b0ee-bbce-41cf-9b1e-8040efc17d1b
 		summarizeBy: none
 		sourceColumn: roadGoalsAgainst
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -475,6 +591,8 @@ table standing
 		summarizeBy: none
 		sourceColumn: roadGoalsFor
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column roadLosses
@@ -482,6 +600,8 @@ table standing
 		lineageTag: d526719b-9725-4576-9a93-f6b0d9b8391b
 		summarizeBy: none
 		sourceColumn: roadLosses
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -491,6 +611,8 @@ table standing
 		summarizeBy: none
 		sourceColumn: roadOtLosses
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column roadPoints
@@ -498,6 +620,8 @@ table standing
 		lineageTag: 6b587b6e-0c24-4e45-8732-95a67c08c1be
 		summarizeBy: none
 		sourceColumn: roadPoints
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -507,6 +631,8 @@ table standing
 		summarizeBy: none
 		sourceColumn: roadRegulationPlusOtWins
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column roadRegulationWins
@@ -514,6 +640,8 @@ table standing
 		lineageTag: 136d9412-93e3-45fb-a381-68021b921271
 		summarizeBy: none
 		sourceColumn: roadRegulationWins
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -523,6 +651,8 @@ table standing
 		summarizeBy: none
 		sourceColumn: roadTies
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column roadWins
@@ -530,6 +660,8 @@ table standing
 		lineageTag: 7e034e32-150a-4264-9295-f215def69c0a
 		summarizeBy: none
 		sourceColumn: roadWins
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -539,6 +671,8 @@ table standing
 		summarizeBy: none
 		sourceColumn: seasonId
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column shootoutLosses
@@ -546,6 +680,8 @@ table standing
 		lineageTag: 476bc2f6-67f7-4c88-874e-82eed1820275
 		summarizeBy: none
 		sourceColumn: shootoutLosses
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -555,6 +691,8 @@ table standing
 		summarizeBy: none
 		sourceColumn: shootoutWins
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column streakCode
@@ -562,6 +700,8 @@ table standing
 		lineageTag: e25f9ee7-726e-48a3-ba6e-f8358c8be7cc
 		summarizeBy: none
 		sourceColumn: streakCode
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -571,6 +711,8 @@ table standing
 		summarizeBy: none
 		sourceColumn: streakCount
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column teamName
@@ -578,6 +720,8 @@ table standing
 		lineageTag: 551bf91a-7851-472c-895b-cba4641a888d
 		summarizeBy: none
 		sourceColumn: teamName
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -587,6 +731,8 @@ table standing
 		summarizeBy: none
 		sourceColumn: teamCommonName
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column teamAbbrev
@@ -594,6 +740,8 @@ table standing
 		lineageTag: ce6e7c49-e152-41cf-bcca-c2aec44f91d1
 		summarizeBy: none
 		sourceColumn: teamAbbrev
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -604,6 +752,8 @@ table standing
 		summarizeBy: none
 		sourceColumn: teamLogo
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column ties
@@ -611,6 +761,8 @@ table standing
 		lineageTag: f459294c-35d9-496f-a0e3-7476983adbdf
 		summarizeBy: none
 		sourceColumn: ties
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -620,6 +772,8 @@ table standing
 		summarizeBy: none
 		sourceColumn: waiversSequence
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column wildcardSequence
@@ -627,6 +781,8 @@ table standing
 		lineageTag: f86c0405-3506-483a-907b-6df7b66e3223
 		summarizeBy: none
 		sourceColumn: wildcardSequence
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -636,6 +792,8 @@ table standing
 		summarizeBy: none
 		sourceColumn: winPctg
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column wins
@@ -643,6 +801,8 @@ table standing
 		lineageTag: 32864c2c-73bb-4d06-8197-2d0d6acdf3d8
 		summarizeBy: none
 		sourceColumn: wins
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -652,6 +812,8 @@ table standing
 		summarizeBy: none
 		sourceColumn: teamDefaultName
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column teamAbbrevString
@@ -659,6 +821,8 @@ table standing
 		lineageTag: 1cc2eb59-201d-4763-9512-8f952c2a91e1
 		summarizeBy: none
 		sourceColumn: teamAbbrevString
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -672,6 +836,8 @@ table standing
 		level divisionName
 			lineageTag: d0937517-cbf8-47b0-9fcc-6ad458a471af
 			column: divisionName
+
+		changedProperty = IsHidden
 
 	partition standing = m
 		mode: import

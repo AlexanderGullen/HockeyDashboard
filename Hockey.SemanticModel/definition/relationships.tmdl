@@ -1,19 +1,24 @@
-relationship a9af422c-c357-4a17-81af-fbe07d92cd6f
+relationship b9939a9f-704c-4b64-b46a-2f08c7bf52f8
 	joinOnDateBehavior: datePartOnly
-	fromColumn: _date_table.Date
-	toColumn: LocalDateTable_efecd598-0ae6-42a5-a11c-77c7e0ce192f.Date
+	fromColumn: schedule.date
+	toColumn: LocalDateTable_e2773b2c-c05d-4d2e-a442-4f72ba67cc55.Date
 
-relationship 7fa7bd4d-7ed7-6450-e9ea-b9c1c87dd73a
+relationship ca67afbe-bdf7-bfcc-81c7-7f4f01ad7a80
 	crossFilteringBehavior: bothDirections
 	fromCardinality: one
-	fromColumn: schedule.date
+	fromColumn: _date_table.Date
+	toColumn: schedule.date
+
+relationship aded7492-befb-4f3c-b91d-72383fb8c7a9
+	joinOnDateBehavior: datePartOnly
+	fromColumn: _game_raw._game_date
+	toColumn: LocalDateTable_91039ee1-6f49-47e0-a84d-ce6950d7642b.Date
+
+relationship 7625ecb7-b6a4-81f8-0d15-3f261e486f97
+	fromColumn: team._game_date
 	toColumn: _date_table.Date
 
-relationship bb03527c-95fa-b31c-9198-e8d36e66a738
-	fromColumn: game._game_date
-	toColumn: _date_table.Date
-
-relationship d58c927a-461c-4da2-e989-c4bf3089f2c0
-	fromColumn: game.teamAbbrev
+relationship 03dc8d02-d544-d819-4eb3-c2c61154216f
+	fromColumn: team.teamAbbrev
 	toColumn: standing.teamAbbrevString
 

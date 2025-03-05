@@ -7,6 +7,8 @@ table spotlight
 		summarizeBy: none
 		sourceColumn: playerId
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column name
@@ -14,6 +16,8 @@ table spotlight
 		lineageTag: 9e2fb095-bcdd-4f2f-bc3f-bebfbb0b2c80
 		summarizeBy: none
 		sourceColumn: name
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -23,6 +27,8 @@ table spotlight
 		summarizeBy: none
 		sourceColumn: playerSlug
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column position
@@ -30,6 +36,8 @@ table spotlight
 		lineageTag: 89c694fe-8a02-4eb9-bfee-0276b6abf50d
 		summarizeBy: none
 		sourceColumn: position
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -39,6 +47,8 @@ table spotlight
 		summarizeBy: none
 		sourceColumn: sweaterNumber
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column teamId
@@ -46,6 +56,8 @@ table spotlight
 		lineageTag: a88051de-0dd7-407b-b588-b9b080b968ed
 		summarizeBy: none
 		sourceColumn: teamId
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -56,6 +68,8 @@ table spotlight
 		summarizeBy: none
 		sourceColumn: headshot
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column teamTriCode
@@ -63,6 +77,8 @@ table spotlight
 		lineageTag: f6581fac-885b-4d00-8a42-fbae46ca3581
 		summarizeBy: none
 		sourceColumn: teamTriCode
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -73,6 +89,8 @@ table spotlight
 		summarizeBy: none
 		sourceColumn: teamLogo
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column sortId
@@ -81,6 +99,8 @@ table spotlight
 		summarizeBy: none
 		sourceColumn: sortId
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column default_name
@@ -88,6 +108,8 @@ table spotlight
 		lineageTag: fad5252e-18c8-4510-831f-f2d388b90a1d
 		summarizeBy: none
 		sourceColumn: default_name
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 

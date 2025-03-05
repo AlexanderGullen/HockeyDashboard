@@ -1,0 +1,325 @@
+table team
+	lineageTag: 16c0610b-d6ae-41f3-834d-c33e40aa5414
+
+	measure _game_count = COUNT(team[id])
+		formatString: 0
+		lineageTag: d1f9b41d-d7e9-4848-90fc-537d2e68ca30
+
+	column id
+		dataType: string
+		lineageTag: d91aae53-f42a-4e70-9688-9593f4112a20
+		summarizeBy: none
+		sourceColumn: id
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column season
+		dataType: string
+		lineageTag: 465d9087-127a-450d-9615-855359d28b0b
+		summarizeBy: none
+		sourceColumn: season
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column gameType
+		dataType: string
+		lineageTag: 7cc1f4c8-6f7b-4418-ba59-43573b0dc046
+		summarizeBy: none
+		sourceColumn: gameType
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column limitedScoring
+		dataType: string
+		lineageTag: 3d41f857-f1fe-40ed-ba38-61950245e484
+		summarizeBy: none
+		sourceColumn: limitedScoring
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column gameDate
+		dataType: string
+		lineageTag: ea72bf38-d8fa-41cb-bb99-13d7cdbe5b2c
+		summarizeBy: none
+		sourceColumn: gameDate
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column venue
+		dataType: string
+		lineageTag: c728994b-8fd5-4bae-809f-b11dbfa3eecf
+		summarizeBy: none
+		sourceColumn: venue
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column venueLocation
+		dataType: string
+		lineageTag: c9062f38-9159-44ca-818c-38a50dfb174f
+		summarizeBy: none
+		sourceColumn: venueLocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column startTimeUTC
+		dataType: string
+		lineageTag: 081dbb45-02e6-42e1-ad03-e9e68db89027
+		summarizeBy: none
+		sourceColumn: startTimeUTC
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column easternUTCOffset
+		dataType: string
+		lineageTag: 2eeb9f4b-8e48-47f7-bd90-96d97c32ab97
+		summarizeBy: none
+		sourceColumn: easternUTCOffset
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column venueUTCOffset
+		dataType: string
+		lineageTag: 7b48300d-8275-4be4-b10a-418162a598f9
+		summarizeBy: none
+		sourceColumn: venueUTCOffset
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column tvBroadcasts
+		dataType: string
+		lineageTag: 8af7d71a-dd1f-4880-9c15-f912a774431e
+		summarizeBy: none
+		sourceColumn: tvBroadcasts
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column gameState
+		dataType: string
+		lineageTag: f194750c-79a7-4268-b8b5-1bdbe4c8e6b2
+		summarizeBy: none
+		sourceColumn: gameState
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column gameScheduleState
+		dataType: string
+		lineageTag: 2069f30f-e9a2-44a1-8d6b-21a0b808135a
+		summarizeBy: none
+		sourceColumn: gameScheduleState
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column periodDescriptor
+		dataType: string
+		lineageTag: c4a771f7-0d88-4a24-9498-bdafa372a4a7
+		summarizeBy: none
+		sourceColumn: periodDescriptor
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column awayTeam
+		dataType: string
+		lineageTag: 8731a457-f46c-4dc8-859e-92766f451eaf
+		summarizeBy: none
+		sourceColumn: awayTeam
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column homeTeam
+		dataType: string
+		lineageTag: 797eb09d-9f2b-48d9-b45b-9667bf8426f0
+		summarizeBy: none
+		sourceColumn: homeTeam
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column shootoutInUse
+		dataType: string
+		lineageTag: f53fec62-a9cc-440c-a559-be9e8ba8d0bd
+		summarizeBy: none
+		sourceColumn: shootoutInUse
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column otInUse
+		dataType: string
+		lineageTag: b7b81ceb-d8f6-4d9b-a3c2-ea95b985b075
+		summarizeBy: none
+		sourceColumn: otInUse
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column clock
+		dataType: string
+		lineageTag: f3b3355d-380c-4dfa-945d-ae0497044d83
+		summarizeBy: none
+		sourceColumn: clock
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column displayPeriod
+		dataType: string
+		lineageTag: 76eb911c-ad0c-4279-9b77-eaf8eb7b96ec
+		summarizeBy: none
+		sourceColumn: displayPeriod
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column maxPeriods
+		dataType: string
+		lineageTag: fac5a8bb-2833-45f9-9ccc-1038529635f8
+		summarizeBy: none
+		sourceColumn: maxPeriods
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column gameOutcome
+		dataType: string
+		lineageTag: 928d971a-aefc-42fc-8b69-ee664084f5b3
+		summarizeBy: none
+		sourceColumn: gameOutcome
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column plays
+		dataType: string
+		lineageTag: 58e91e75-9dac-434b-a9f1-fe96355616f0
+		summarizeBy: none
+		sourceColumn: plays
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column rosterSpots
+		dataType: string
+		lineageTag: f4b4701a-8fe4-49a6-a855-72483548dfed
+		summarizeBy: none
+		sourceColumn: rosterSpots
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column regPeriods
+		dataType: string
+		lineageTag: 18abee48-45cd-459b-a6b3-e6948a8c4b7e
+		summarizeBy: none
+		sourceColumn: regPeriods
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column summary
+		dataType: string
+		lineageTag: 5bbf641c-24d7-4e6a-8cd5-f596fd608578
+		summarizeBy: none
+		sourceColumn: summary
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column team
+		dataType: string
+		lineageTag: 4f98fdfa-7e97-4d18-a2c8-f53529d7b1fc
+		summarizeBy: none
+		sourceColumn: team
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column teamLocation
+		dataType: string
+		lineageTag: aa6c6688-35e7-44e4-922b-e98be8d88384
+		summarizeBy: none
+		sourceColumn: teamLocation
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column teamAbbrev
+		dataType: string
+		lineageTag: d8f23228-18f0-4549-abcb-125ff3e9bfbe
+		summarizeBy: none
+		sourceColumn: teamAbbrev
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column _game_date = DATE(LEFT(team[gameDate],4),MID(team[gameDate],6,2),RIGHT(team[gameDate],2))
+		formatString: General Date
+		lineageTag: d24e921c-a7c0-454a-85bd-c8455ab87a76
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition team = m
+		mode: import
+		source =
+				let
+				    game_team = Table.AddColumn(_game_raw,"team",each {
+				    [teamAbbrev=[homeTeam][abbrev],teamLocation="home"],
+				    [teamAbbrev=[awayTeam][abbrev],teamLocation="away"]
+				    }),
+				
+				    game_team_location = Table.AddColumn(Table.ExpandListColumn(game_team,"team"),"teamLocation",each [team][teamLocation]),
+				    game_team_abbrev = Table.AddColumn(game_team_location,"teamAbbrev",each [team][teamAbbrev]),
+				
+				
+				    output = game_team_abbrev
+				in
+				    output
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

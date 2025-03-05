@@ -7,6 +7,8 @@ table player_landing
 		summarizeBy: none
 		sourceColumn: playerId
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column isActive
@@ -14,6 +16,8 @@ table player_landing
 		lineageTag: e2fcf7fc-6635-4c6e-a5f9-00b9a4f27c70
 		summarizeBy: none
 		sourceColumn: isActive
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -23,6 +27,8 @@ table player_landing
 		summarizeBy: none
 		sourceColumn: firstName
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column lastName
@@ -30,6 +36,8 @@ table player_landing
 		lineageTag: aa4c9c16-d66f-406d-ac74-520d923c9daa
 		summarizeBy: none
 		sourceColumn: lastName
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -39,6 +47,8 @@ table player_landing
 		summarizeBy: none
 		sourceColumn: badges
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column sweaterNumber
@@ -47,6 +57,8 @@ table player_landing
 		summarizeBy: none
 		sourceColumn: sweaterNumber
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column position
@@ -54,6 +66,8 @@ table player_landing
 		lineageTag: 3e0861f8-f3bc-489a-9cc3-d3b2c79a5903
 		summarizeBy: none
 		sourceColumn: position
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -64,6 +78,8 @@ table player_landing
 		summarizeBy: none
 		sourceColumn: headshot
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column heroImage
@@ -71,6 +87,8 @@ table player_landing
 		lineageTag: 7d776167-3cb3-49a9-aff8-b700af3d9f4b
 		summarizeBy: none
 		sourceColumn: heroImage
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -80,6 +98,8 @@ table player_landing
 		summarizeBy: none
 		sourceColumn: heightInInches
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column heightInCentimeters
@@ -87,6 +107,8 @@ table player_landing
 		lineageTag: 26617d11-56c9-426d-944a-fcdfd6072090
 		summarizeBy: none
 		sourceColumn: heightInCentimeters
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -96,6 +118,8 @@ table player_landing
 		summarizeBy: none
 		sourceColumn: weightInPounds
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column weightInKilograms
@@ -103,6 +127,8 @@ table player_landing
 		lineageTag: 8a7a76f5-4d81-4ce9-8880-8e2df3e85384
 		summarizeBy: none
 		sourceColumn: weightInKilograms
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -112,6 +138,8 @@ table player_landing
 		summarizeBy: none
 		sourceColumn: birthDate
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column birthCity
@@ -119,6 +147,8 @@ table player_landing
 		lineageTag: 1867a390-d25d-4d24-99a1-833345d60f20
 		summarizeBy: none
 		sourceColumn: birthCity
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -128,6 +158,8 @@ table player_landing
 		summarizeBy: none
 		sourceColumn: birthStateProvince
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column birthCountry
@@ -135,6 +167,8 @@ table player_landing
 		lineageTag: 78831756-3de3-4919-a575-592e8a9f7cea
 		summarizeBy: none
 		sourceColumn: birthCountry
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -144,6 +178,8 @@ table player_landing
 		summarizeBy: none
 		sourceColumn: shootsCatches
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column playerSlug
@@ -151,6 +187,8 @@ table player_landing
 		lineageTag: b6a6558a-112e-4a88-b856-7eaee143201e
 		summarizeBy: none
 		sourceColumn: playerSlug
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -160,6 +198,8 @@ table player_landing
 		summarizeBy: none
 		sourceColumn: inTop100AllTime
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column inHHOF
@@ -167,6 +207,8 @@ table player_landing
 		lineageTag: abd1b47b-f740-47b6-98f8-541d347898a4
 		summarizeBy: none
 		sourceColumn: inHHOF
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -176,6 +218,8 @@ table player_landing
 		summarizeBy: none
 		sourceColumn: featuredStats
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column careerTotals
@@ -183,6 +227,8 @@ table player_landing
 		lineageTag: c4dee9d5-686f-4d30-9729-d65dc66da0e1
 		summarizeBy: none
 		sourceColumn: careerTotals
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -192,6 +238,8 @@ table player_landing
 		summarizeBy: none
 		sourceColumn: shopLink
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column twitterLink
@@ -199,6 +247,8 @@ table player_landing
 		lineageTag: 46f89447-a509-4a64-b62f-171e4ec25b41
 		summarizeBy: none
 		sourceColumn: twitterLink
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -208,6 +258,8 @@ table player_landing
 		summarizeBy: none
 		sourceColumn: watchLink
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column last5Games
@@ -215,6 +267,8 @@ table player_landing
 		lineageTag: bca29a05-17de-4a47-941b-5d2a8f287df9
 		summarizeBy: none
 		sourceColumn: last5Games
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -224,6 +278,8 @@ table player_landing
 		summarizeBy: none
 		sourceColumn: seasonTotals
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column awards
@@ -231,6 +287,8 @@ table player_landing
 		lineageTag: bbc40a54-20e2-4ba8-ae20-158a7b23a22c
 		summarizeBy: none
 		sourceColumn: awards
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 

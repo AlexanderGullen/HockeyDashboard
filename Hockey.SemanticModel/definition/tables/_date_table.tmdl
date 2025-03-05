@@ -1,17 +1,14 @@
 table _date_table
-	lineageTag: 8b928295-f4b5-45b8-aea2-893091c1c79c
+	lineageTag: 06a6ac48-9c1a-4239-86f3-89fd5c0a31b4
+	dataCategory: Time
 
 	column Date
+		isKey
 		formatString: General Date
-		lineageTag: 92e7a4ee-7fce-4deb-a2c3-7782faeb2030
+		lineageTag: 1f8ad9a6-74cd-44c8-a2f6-6219e42edb07
 		summarizeBy: none
 		isNameInferred
 		sourceColumn: [Date]
-
-		variation Variation
-			isDefault
-			relationship: a9af422c-c357-4a17-81af-fbe07d92cd6f
-			defaultHierarchy: LocalDateTable_efecd598-0ae6-42a5-a11c-77c7e0ce192f.'Date Hierarchy'
 
 		annotation SummarizationSetBy = Automatic
 
@@ -19,5 +16,5 @@ table _date_table
 		mode: import
 		source = CALENDAR(MIN(schedule[date]),MAX(schedule[date]))
 
-	annotation PBI_Id = 08189490ee2c45e4835056481ee00e3f
+	annotation PBI_Id = 7466d7791a44458487bb69cfac70d104
 

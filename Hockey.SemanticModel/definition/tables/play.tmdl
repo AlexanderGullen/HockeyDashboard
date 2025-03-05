@@ -1,0 +1,203 @@
+table play
+	lineageTag: c0b3fd3b-8b7e-456a-a68b-7707eba56c9d
+
+	column eventId
+		dataType: string
+		lineageTag: 0c6e4b68-327a-43de-af31-085b51435166
+		summarizeBy: none
+		sourceColumn: eventId
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column periodDescriptor
+		dataType: string
+		lineageTag: da26e2a6-70ae-4c8c-8aa5-3185fd161dc1
+		summarizeBy: none
+		sourceColumn: periodDescriptor
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column timeInPeriod
+		dataType: string
+		lineageTag: 2f5e4a81-cb0e-4537-b39e-c057192522b7
+		summarizeBy: none
+		sourceColumn: timeInPeriod
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column timeRemaining
+		dataType: string
+		lineageTag: e67e5d55-acc1-4f91-a96b-8834c221d4c5
+		summarizeBy: none
+		sourceColumn: timeRemaining
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column situationCode
+		dataType: string
+		lineageTag: 587a5d12-04d5-4ede-818d-1fb756766f04
+		summarizeBy: none
+		sourceColumn: situationCode
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column homeTeamDefendingSide
+		dataType: string
+		lineageTag: c3ad02df-d042-40fa-b0d7-ee670ba7bde9
+		summarizeBy: none
+		sourceColumn: homeTeamDefendingSide
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column typeCode
+		dataType: string
+		lineageTag: 1a7d18aa-6955-4d38-87e3-cb9a4f30ab79
+		summarizeBy: none
+		sourceColumn: typeCode
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column typeDescKey
+		dataType: string
+		lineageTag: f0305b46-be6f-476f-bf2c-5744f7b319d0
+		summarizeBy: none
+		sourceColumn: typeDescKey
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column sortOrder
+		dataType: string
+		lineageTag: 2fd3ae5a-3485-4a57-9ee5-c791038fd72d
+		summarizeBy: none
+		sourceColumn: sortOrder
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column details
+		dataType: string
+		lineageTag: c77b5588-9de4-49d5-b3bd-fcc63afd849a
+		summarizeBy: none
+		sourceColumn: details
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column xCoord
+		dataType: double
+		lineageTag: d0c41e25-572d-400e-a28a-580290c6c0eb
+		summarizeBy: sum
+		sourceColumn: xCoord
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column yCoord
+		dataType: double
+		lineageTag: 594a7fc0-baef-4311-bc85-c91c28e74802
+		summarizeBy: sum
+		sourceColumn: yCoord
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column index
+		dataType: double
+		lineageTag: 1803eeb8-b4e1-4acb-939d-08b5155d068a
+		summarizeBy: sum
+		sourceColumn: index
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column eventOwnerTeamId
+		dataType: string
+		lineageTag: 4f0f0fb7-a672-4cc7-bf6d-6a37f4e6d0b2
+		summarizeBy: none
+		sourceColumn: eventOwnerTeamId
+
+		annotation SummarizationSetBy = Automatic
+
+	column highlightClip
+		dataType: string
+		lineageTag: b7044e42-b1d8-472f-9f69-2de70fe8debf
+		summarizeBy: none
+		sourceColumn: highlightClip
+
+		annotation SummarizationSetBy = Automatic
+
+	partition play = m
+		mode: import
+		source = ```
+				let
+				    play = Table.ExpandListColumn(_game_raw,"plays"),
+				
+				    play_by_play = Table.FromRecords(List.Select(Table.Column(play,"plays"),each if _ = null then false else true),
+				    {
+				        "eventId",
+				        "periodDescriptor",
+				        "timeInPeriod",
+				        "timeRemaining",
+				        "situationCode",
+				        "homeTeamDefendingSide",
+				        "typeCode",
+				        "typeDescKey",
+				        "sortOrder",
+				        "details"
+				    }
+				    ,MissingField.UseNull),
+				
+				    sorted = Table.Sort(play,Order.Ascending),
+				
+				    x_added = Table.AddColumn(play_by_play, "xCoord", each 
+				    if [details] = null then null else 
+				        if Record.HasFields([details],"xCoord") then [details][xCoord] as number else null
+				    , type number),
+				
+				    y_added = Table.AddColumn(x_added, "yCoord", each 
+				    if [details] = null then null else 
+				        if Record.HasFields([details],"yCoord") then [details][yCoord] as number else null
+				    , type number),
+				
+				    owner = Table.AddColumn(y_added, "eventOwnerTeamId", each 
+				    if [details] = null then null else 
+				        if Record.HasFields([details],"eventOwnerTeamId") then [details][eventOwnerTeamId] else null
+				    ),
+				
+				    highlight = Table.AddColumn(owner, "highlightClip", each 
+				    if [details] = null then null else 
+				        if Record.HasFields([details],"highlightClipSharingUrl") then [details][highlightClipSharingUrl] else null
+				    ),
+				
+				    index = Table.AddIndexColumn(highlight,"index"),
+				
+				    output = index
+				in
+				    output
+				```
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
