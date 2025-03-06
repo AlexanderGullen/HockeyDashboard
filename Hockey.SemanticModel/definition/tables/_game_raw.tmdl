@@ -276,10 +276,20 @@ table _game_raw
 		annotation SummarizationSetBy = Automatic
 
 	column index
-		dataType: string
+		dataType: double
 		lineageTag: 574d5e8b-5803-4f73-8301-b7b9514fedfb
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: index
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column name
+		dataType: string
+		lineageTag: 310f586e-d799-4def-9594-b1c3581aab38
+		summarizeBy: none
+		sourceColumn: name
 
 		annotation SummarizationSetBy = Automatic
 
@@ -296,8 +306,9 @@ table _game_raw
 				    game_week_with_game_play_by_play = Table.AddColumn(game_week_with_game_id,"game", each _fetch_play_by_play(_[game_id])),
 				    game = Table.FromRecords(Table.Column(game_week_with_game_play_by_play,"game")),
 				
+				    named = Table.AddColumn(game,"name", each Text.Combine({[homeTeam][commonName][default]," vs ", [awayTeam][commonName][default]})),
 				
-				    output = Table.AddColumn(game,"index", each Text.Combine({[homeTeam][commonName][default]," vs ", [awayTeam][commonName][default]}))
+				    output = Table.AddIndexColumn(named,"index")
 				in
 				    output
 				```

@@ -1,5 +1,5 @@
 {
-  "config": "{\"version\":\"5.61\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.61\",\"type\":2}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "config": "{\"version\":\"5.61\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.61\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
   "filters": "[]",
   "layoutOptimization": 0,
   "resourcePackages": [
@@ -169,6 +169,15 @@
           "x": 697.61,
           "y": 567.76,
           "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"a095c539ed36b1fc44f2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":273.13432835820896,\"y\":134.32835820895522,\"z\":2001,\"width\":848.955223880597,\"height\":300,\"tabOrder\":2001}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"\"}]}]}}]}}}",
+          "filters": "[]",
+          "height": 300.00,
+          "width": 848.96,
+          "x": 273.13,
+          "y": 134.33,
+          "z": 2001.00
         }
       ],
       "width": 1280.00
@@ -192,13 +201,13 @@
           "z": 1000.00
         },
         {
-          "config": "{\"name\":\"7bd92c3ea7f7007d193f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":645,\"y\":412,\"width\":613,\"height\":171,\"z\":4001,\"tabOrder\":4001}}],\"singleVisual\":{\"visualType\":\"advancedSlicerVisual\",\"projections\":{\"Values\":[{\"queryRef\":\"standing.teamLogo\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"standing\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"teamLogo\"},\"Name\":\"standing.teamLogo\",\"NativeReferenceName\":\"teamLogo\"}]},\"drillFilterOtherVisuals\":true}}",
+          "config": "{\"name\":\"7bd92c3ea7f7007d193f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":645,\"y\":411.6666666666667,\"z\":5000,\"width\":613.3333333333334,\"height\":285,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"advancedSlicerVisual\",\"projections\":{\"Values\":[{\"queryRef\":\"standing.teamLogo\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"standing\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"teamLogo\"},\"Name\":\"standing.teamLogo\",\"NativeReferenceName\":\"teamLogo\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{}}]}}}",
           "filters": "[]",
-          "height": 171.00,
-          "width": 613.00,
+          "height": 285.00,
+          "width": 613.33,
           "x": 645.00,
-          "y": 412.00,
-          "z": 4001.00
+          "y": 411.67,
+          "z": 5000.00
         },
         {
           "config": "{\"name\":\"869836f6cd2eb2105302\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":3000,\"width\":353.06990881458967,\"height\":101.15501519756839,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Here's a Hockey Heatmap\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"24pt\"}},{\"value\":\" \"},{\"value\":\"'have a hoot!\",\"textStyle\":{\"fontSize\":\"16pt\"}}]}]}}]}}}",
@@ -219,22 +228,13 @@
           "z": 2000.00
         },
         {
-          "config": "{\"name\":\"a2e2138f4a227ae5ab22\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":101.15501519756839,\"z\":4000,\"width\":565.1063829787234,\"height\":482.4316109422493,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Values\":[{\"queryRef\":\"standing._goal_sum\"}],\"Rows\":[{\"queryRef\":\"side.index\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"standing\",\"Type\":0},{\"Name\":\"s1\",\"Entity\":\"side\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"_goal_sum\"},\"Name\":\"standing._goal_sum\",\"NativeReferenceName\":\"_goal_sum\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s1\"}},\"Property\":\"index\"},\"Name\":\"side.index\",\"NativeReferenceName\":\"index\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Recent Games'\"}}}}}]}}}",
-          "filters": "[]",
-          "height": 482.43,
-          "width": 565.11,
+          "config": "{\"name\":\"a2e2138f4a227ae5ab22\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":100.83333333333334,\"z\":4000,\"width\":577.5,\"height\":482.5,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(standing.date)\"},{\"queryRef\":\"standing._goal_sum\"}],\"Rows\":[{\"queryRef\":\"side.name\",\"active\":true},{\"queryRef\":\"standing.teamLogo\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s1\",\"Entity\":\"standing\",\"Type\":0},{\"Name\":\"s\",\"Entity\":\"side\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s1\"}},\"Property\":\"date\"}},\"Function\":3},\"Name\":\"Min(standing.date)\",\"NativeReferenceName\":\"Date\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s1\"}},\"Property\":\"_goal_sum\"},\"Name\":\"standing._goal_sum\",\"NativeReferenceName\":\"_goal_sum\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"name\"},\"Name\":\"side.name\",\"NativeReferenceName\":\"name\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s1\"}},\"Property\":\"teamLogo\"},\"Name\":\"standing.teamLogo\",\"NativeReferenceName\":\"teamLogo\"}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"side.name\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"side\"}},\"Property\":\"name\"}}],\"isPinned\":true},{\"queryRefs\":[\"standing.teamLogo\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null}}],\"columnProperties\":{\"Min(standing.date)\":{\"displayName\":\"Date\"}},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Recent Games'\"}}}}}]}}}",
+          "filters": "[{\"name\":\"b38cda25ea921996fff7\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"side\"}},\"Property\":\"index\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"side\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"index\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"null\"}}]]}}}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false}]",
+          "height": 482.50,
+          "width": 577.50,
           "x": 0.00,
-          "y": 101.16,
+          "y": 100.83,
           "z": 4000.00
-        },
-        {
-          "config": "{\"name\":\"c30fe71f1a87f1772567\",\"layouts\":[{\"id\":0,\"position\":{\"x\":545,\"y\":50.833333333333336,\"z\":4002,\"width\":300,\"height\":300,\"tabOrder\":4002}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"side.team\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"side\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"team\"},\"Name\":\"side.team\",\"NativeReferenceName\":\"team\"}]},\"drillFilterOtherVisuals\":true}}",
-          "filters": "[]",
-          "height": 300.00,
-          "width": 300.00,
-          "x": 545.00,
-          "y": 50.83,
-          "z": 4002.00
         },
         {
           "config": "{\"name\":\"ce8c44dd8a3026cc784c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":646.1111111111111,\"y\":92.77777777777777,\"z\":0,\"width\":612.2222222222222,\"height\":291.1111111111111,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}]}},\"howCreated\":\"InsertVisualButton\"}",

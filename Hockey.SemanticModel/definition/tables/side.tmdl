@@ -303,12 +303,14 @@ table side
 		annotation SummarizationSetBy = Automatic
 
 	column index
-		dataType: string
+		dataType: double
 		lineageTag: c06b085e-7a51-4cdc-9c1b-e0b353eb4356
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: index
 
 		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column side
 		dataType: double
@@ -319,6 +321,14 @@ table side
 		annotation SummarizationSetBy = Automatic
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column name
+		dataType: string
+		lineageTag: 4ef2b07e-4fb4-4b9f-803d-bc1374a0f289
+		summarizeBy: none
+		sourceColumn: name
+
+		annotation SummarizationSetBy = Automatic
 
 	partition side = m
 		mode: import
