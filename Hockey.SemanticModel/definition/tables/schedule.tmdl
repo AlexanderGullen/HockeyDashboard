@@ -41,6 +41,13 @@ table schedule
 
 		annotation SummarizationSetBy = Automatic
 
+	column _zero_column = 0
+		formatString: 0
+		lineageTag: 7ba6a5eb-3b07-4f5f-a6ad-cf4b5fe39659
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
 	partition schedule = m
 		mode: import
 		source =

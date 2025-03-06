@@ -1,7 +1,7 @@
-table team
+table side
 	lineageTag: 16c0610b-d6ae-41f3-834d-c33e40aa5414
 
-	measure _game_count = COUNT(team[id])
+	measure _game_count = COUNT(side[id])
 		formatString: 0
 		lineageTag: d1f9b41d-d7e9-4848-90fc-537d2e68ca30
 
@@ -295,14 +295,32 @@ table team
 
 		annotation SummarizationSetBy = Automatic
 
-	column _game_date = DATE(LEFT(team[gameDate],4),MID(team[gameDate],6,2),RIGHT(team[gameDate],2))
+	column _game_date = DATE(LEFT(side[gameDate],4),MID(side[gameDate],6,2),RIGHT(side[gameDate],2))
 		formatString: General Date
 		lineageTag: d24e921c-a7c0-454a-85bd-c8455ab87a76
 		summarizeBy: none
 
 		annotation SummarizationSetBy = Automatic
 
-	partition team = m
+	column index
+		dataType: string
+		lineageTag: c06b085e-7a51-4cdc-9c1b-e0b353eb4356
+		summarizeBy: none
+		sourceColumn: index
+
+		annotation SummarizationSetBy = Automatic
+
+	column side
+		dataType: double
+		lineageTag: 6318d029-73af-4254-8668-6a93b664d5ff
+		summarizeBy: none
+		sourceColumn: side
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition side = m
 		mode: import
 		source =
 				let
@@ -315,7 +333,7 @@ table team
 				    game_team_abbrev = Table.AddColumn(game_team_location,"teamAbbrev",each [team][teamAbbrev]),
 				
 				
-				    output = game_team_abbrev
+				    output = Table.AddIndexColumn(game_team_abbrev,"side")
 				in
 				    output
 

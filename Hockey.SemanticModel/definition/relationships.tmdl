@@ -15,10 +15,16 @@ relationship aded7492-befb-4f3c-b91d-72383fb8c7a9
 	toColumn: LocalDateTable_91039ee1-6f49-47e0-a84d-ce6950d7642b.Date
 
 relationship 7625ecb7-b6a4-81f8-0d15-3f261e486f97
-	fromColumn: team._game_date
+	fromColumn: side._game_date
 	toColumn: _date_table.Date
 
 relationship 03dc8d02-d544-d819-4eb3-c2c61154216f
-	fromColumn: team.teamAbbrev
+	crossFilteringBehavior: bothDirections
+	fromColumn: side.teamAbbrev
 	toColumn: standing.teamAbbrevString
+
+relationship aa8ac3dc-a2db-667d-f05b-15ffba5e05c2
+	crossFilteringBehavior: bothDirections
+	fromColumn: play.side
+	toColumn: side.side
 

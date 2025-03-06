@@ -124,10 +124,10 @@ table play
 	column index
 		dataType: double
 		lineageTag: 1803eeb8-b4e1-4acb-939d-08b5155d068a
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: index
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
@@ -147,14 +147,30 @@ table play
 
 		annotation SummarizationSetBy = Automatic
 
+	column side
+		dataType: string
+		lineageTag: 593f969c-dd97-4ea5-943f-7db2506a4d35
+		summarizeBy: none
+		sourceColumn: side
+
+		annotation SummarizationSetBy = Automatic
+
 	partition play = m
 		mode: import
 		source = ```
 				let
-				    play = Table.ExpandListColumn(_game_raw,"plays"),
+				    play = Table.ExpandListColumn(side,"plays"),
 				
-				    play_by_play = Table.FromRecords(List.Select(Table.Column(play,"plays"),each if _ = null then false else true),
+				    associated = Table.AddColumn(
+				        play,
+				        "record", 
+				        each if [plays] = null then null else Record.AddField([plays], "side", [index]), 
+				        type list
+				    ),
+				
+				    play_by_play = Table.FromRecords(List.Select(Table.Column(associated,"record"),each if _ = null then false else true),
 				    {
+				        "side",
 				        "eventId",
 				        "periodDescriptor",
 				        "timeInPeriod",
@@ -167,8 +183,6 @@ table play
 				        "details"
 				    }
 				    ,MissingField.UseNull),
-				
-				    sorted = Table.Sort(play,Order.Ascending),
 				
 				    x_added = Table.AddColumn(play_by_play, "xCoord", each 
 				    if [details] = null then null else 
@@ -199,5 +213,5 @@ table play
 
 	annotation PBI_NavigationStepName = Navigation
 
-	annotation PBI_ResultType = Table
+	annotation PBI_ResultType = Exception
 

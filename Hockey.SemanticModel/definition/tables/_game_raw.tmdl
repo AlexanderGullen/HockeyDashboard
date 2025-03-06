@@ -275,6 +275,14 @@ table _game_raw
 
 		annotation SummarizationSetBy = Automatic
 
+	column index
+		dataType: string
+		lineageTag: 574d5e8b-5803-4f73-8301-b7b9514fedfb
+		summarizeBy: none
+		sourceColumn: index
+
+		annotation SummarizationSetBy = Automatic
+
 	partition _game_raw = m
 		mode: import
 		source = ```
@@ -289,7 +297,7 @@ table _game_raw
 				    game = Table.FromRecords(Table.Column(game_week_with_game_play_by_play,"game")),
 				
 				
-				    output = game
+				    output = Table.AddColumn(game,"index", each Text.Combine({[homeTeam][commonName][default]," vs ", [awayTeam][commonName][default]}))
 				in
 				    output
 				```

@@ -22,12 +22,6 @@ table Points
 
 		annotation SummarizationSetBy = Automatic
 
-	column _date_string = DATE(LEFT(team[gameDate],4),MID(team[gameDate],5,2),RIGHT(team[gameDate],2))
-		lineageTag: 5c6d23fe-8b2b-412d-a0a0-5da7517537da
-		summarizeBy: none
-
-		annotation SummarizationSetBy = Automatic
-
 	partition Points = m
 		mode: import
 		source =
