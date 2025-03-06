@@ -659,6 +659,16 @@ table _remaining
 
 		annotation SummarizationSetBy = Automatic
 
+	column _total_games_number
+		lineageTag: 0b5923b5-3c10-4835-80b0-91a533f24f2e
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: standing[_total_games_number]
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	partition _remaining = calculated
 		mode: import
 		source =

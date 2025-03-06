@@ -142,6 +142,7 @@ table play
 	column highlightClip
 		dataType: string
 		lineageTag: b7044e42-b1d8-472f-9f69-2de70fe8debf
+		dataCategory: WebUrl
 		summarizeBy: none
 		sourceColumn: highlightClip
 
@@ -155,6 +156,12 @@ table play
 
 		annotation SummarizationSetBy = Automatic
 
+	column _has_highlight_clip = if(ISBLANK(play[highlightClip]), "", "Highligh Clip")
+		lineageTag: d1aae908-1070-460b-b66a-82d3e0bfd7d4
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition play = m
 		mode: import
 		source = ```
@@ -164,7 +171,7 @@ table play
 				    associated = Table.AddColumn(
 				        play,
 				        "record", 
-				        each if [plays] = null then null else Record.AddField([plays], "side", [index]), 
+				        each if [plays] = null then null else Record.AddField([plays], "side", [side]), 
 				        type list
 				    ),
 				

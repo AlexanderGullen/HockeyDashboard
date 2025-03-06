@@ -2,10 +2,6 @@ table standing
 	excludeFromModelRefresh
 	lineageTag: 87320abf-968b-4f2a-b2a7-ce88313e0368
 
-	measure _goal_sum = CALCULATE(COUNT(play[index]), play[typeDescKey] = "Goal")
-		formatString: 0
-		lineageTag: 9b9772ee-3b10-4cac-ac99-6f0b92b675fb
-
 	column conferenceAbbrev
 		dataType: string
 		lineageTag: 612a5f9a-2c4a-4bc7-8f45-a904dc2ad8dd
@@ -830,6 +826,13 @@ table standing
 
 		annotation SummarizationSetBy = Automatic
 
+	column _total_games_number = VALUE(standing[gamesPlayed])
+		formatString: 0
+		lineageTag: 1a2f42f9-3f92-49b6-9246-94fb27ff65fc
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	hierarchy standing
 		lineageTag: 421c10bb-1f73-47f3-9b51-e3c8f5d6da0d
 
@@ -853,8 +856,9 @@ table standing
 				    standings = Table.FromRecords(json[standings]),
 				    defaultAbbrev = Table.AddColumn(standings,"teamAbbrevString",each [teamAbbrev][default]),
 				    defaultName = Table.AddColumn(defaultAbbrev,"teamDefaultName",each [teamName][default]),
+				    changedType = Table.TransformColumnTypes(defaultName,{{"gamesPlayed", type number}}),
 				
-				    output = defaultName
+				    output = changedType
 				in
 				    output
 

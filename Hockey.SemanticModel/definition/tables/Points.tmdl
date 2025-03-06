@@ -22,6 +22,13 @@ table Points
 
 		annotation SummarizationSetBy = Automatic
 
+	column _total_games_number
+		type: calculated
+		lineageTag: 5a11a77c-7ce1-4ea5-b041-610b1ac38ecc
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
 	partition Points = m
 		mode: import
 		source =

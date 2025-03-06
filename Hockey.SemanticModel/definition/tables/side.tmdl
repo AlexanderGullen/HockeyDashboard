@@ -330,6 +330,13 @@ table side
 
 		annotation SummarizationSetBy = Automatic
 
+	column _goals = CALCULATE(COUNTROWS(play),play[typeDescKey]="Goal") / 2 //A row gets split while the model is being created so this accounts for that
+		formatString: 0
+		lineageTag: aa7bfed6-e6ae-43d6-8332-edc3b37b2b3e
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
 	partition side = m
 		mode: import
 		source =
