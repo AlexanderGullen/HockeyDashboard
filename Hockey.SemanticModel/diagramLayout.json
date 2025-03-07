@@ -36,32 +36,6 @@
         },
         {
           "location": {
-            "x": 878,
-            "y": 0
-          },
-          "nodeIndex": "Points",
-          "nodeLineageTag": "4bb570a5-6772-42a6-a09e-a5ebfcfb54e0",
-          "size": {
-            "height": 128,
-            "width": 234
-          },
-          "zIndex": 5
-        },
-        {
-          "location": {
-            "x": 0,
-            "y": 517.43888085251547
-          },
-          "nodeIndex": "_remaining",
-          "nodeLineageTag": "ed0cc5ff-90a1-45f0-8cf6-a4767c36d73c",
-          "size": {
-            "height": 200,
-            "width": 234
-          },
-          "zIndex": 6
-        },
-        {
-          "location": {
             "x": 1264.4255185771858,
             "y": 534.1275928859302
           },
@@ -123,6 +97,19 @@
             "width": 234
           },
           "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 1269.0253720928108,
+            "y": 380.09765625
+          },
+          "nodeIndex": "_today",
+          "nodeLineageTag": "0a41023f-742d-49aa-9306-cef8a0f61935",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "All tables",

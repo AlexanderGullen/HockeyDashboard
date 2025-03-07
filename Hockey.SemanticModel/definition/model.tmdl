@@ -6,19 +6,17 @@ model Model
 		legacyRedirects
 		returnErrorValuesAsNull
 
-annotation PBI_QueryOrder = ["schedule","player_landing","standing","Points","_fetch_play_by_play","_api_delay_in_seconds","_game_raw","play","side"]
+annotation PBI_QueryOrder = ["schedule","player_landing","standing","_fetch_play_by_play","_api_delay_in_seconds","_game_raw","play","side","_today"]
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBIDesktopVersion = 2.140.1205.0 (25.02)+2ab3defe107764e1cf486b42122d9362df7f34ea
+annotation PBIDesktopVersion = 2.140.1351.0 (25.02)+9bb96b6a5aee417774126f3416805b86efac121f
 
 annotation PBI_ProTooling = ["DevMode"]
 
 ref table schedule
 ref table player_landing
 ref table standing
-ref table Points
-ref table _remaining
 ref table _game_raw
 ref table play
 ref table side
@@ -26,6 +24,7 @@ ref table DateTableTemplate_f47746b8-77d7-4b89-b074-11fcce8e2ea7
 ref table LocalDateTable_e2773b2c-c05d-4d2e-a442-4f72ba67cc55
 ref table _date_table
 ref table LocalDateTable_91039ee1-6f49-47e0-a84d-ce6950d7642b
+ref table _today
 
 ref cultureInfo en-CA
 

@@ -298,7 +298,8 @@ table _game_raw
 		source = ```
 				let
 				    headers = [#"Content-type" = "application/json"],
-				    result = Web.Contents("https://api-web.nhle.com/v1/schedule/2025-03-01",[Headers = headers]), //TODO: abstract the date to a parameter
+				    endpoint = Text.Combine({"https://api-web.nhle.com/v1/schedule/",_today}),
+				    result = Web.Contents(endpoint,[Headers = headers]), //TODO: abstract the date to a parameter
 				    game_week = Table.FromRecords(Json.Document(result)[gameWeek]),
 				    
 				    game_week_with_game = Table.ExpandListColumn(game_week,"games"),

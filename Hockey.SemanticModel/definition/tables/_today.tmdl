@@ -1,0 +1,23 @@
+table _today
+	lineageTag: 0a41023f-742d-49aa-9306-cef8a0f61935
+
+	column _today
+		dataType: string
+		lineageTag: ecba157e-933f-4ccf-aaab-f103a121b17e
+		summarizeBy: none
+		sourceColumn: _today
+
+		annotation SummarizationSetBy = Automatic
+
+	partition _today = m
+		mode: import
+		source =
+				let
+				    Output = Date.ToText(DateTime.Date(DateTime.LocalNow()), [Format="yyyy-MM-dd"])
+				in
+				    Output
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+
